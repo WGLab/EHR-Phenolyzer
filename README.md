@@ -1,13 +1,24 @@
-#environment tested
+# Introduction
+
+EHR-Phenolyzer is a pipeline to analyze clinical notes automatically and generate ranked gene list that may explain the observed phenotypes.
+
+# environment tested
+
 Python 2.7.13
 metamap16.BINARY.Linux (2016)
 
 
-#run example
-python ehr_phenolyzer.py -i example/Kleyner_ANKRD11.txt -p kleyner > ehr_phenolyzer.log 
+# run example
+
+`python ehr_phenolyzer.py -i example/Kleyner_ANKRD11.txt -p kleyner > ehr_phenolyzer.log `
+
 #get help
-python ehr_phenolyzer.py -h
+
+`python ehr_phenolyzer.py -h`
+
 #command line arguments
+
+```
 usage: ehr_phenolyzer.py [-h] -i INPUT [-p PREFIX] [-d OUTDIR] [-m OMIM]
 
 Get ranked gene ids based on EHR medical notes
@@ -24,4 +35,4 @@ optional arguments:
 
 One step from EHR records to ranked gene list.Before running, please install
 Phenolyzer, Metamap first
-
+```
