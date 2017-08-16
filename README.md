@@ -12,11 +12,11 @@ metamap16.BINARY.Linux (2016)
 
 `python ehr_phenolyzer.py -i example/Kleyner_ANKRD11.txt -p kleyner > ehr_phenolyzer.log `
 
-#get help
+## get help
 
 `python ehr_phenolyzer.py -h`
 
-#command line arguments
+## command line arguments
 
 ```
 usage: ehr_phenolyzer.py [-h] -i INPUT [-p PREFIX] [-d OUTDIR] [-m OMIM]
