@@ -37,10 +37,24 @@ def run_command(command_line):
 phenolyzer_outdir="mkdir -p {0}".format(args["outdir"])
 print(run_command(phenolyzer_outdir))
 
+###handle no-ASCII characters in the medical notes, otherwise will lead to system error in metamap
+def removeNonAscii(s):
+    return "".join(i for i in s if ord(i)<128)
+
+input_tmp_name=args["outdir"]+"/"+args["input"].split("/")[-1]+".tmp"
+input_tmp=open(input_tmp_name,"w")
+input_str=""
+for line in open(args["input"]):
+    input_str=input_str+line
+
+input_str_noascii=removeNonAscii(input_str)
+input_tmp.write(input_str_noascii)
+input_tmp.close()
+
 ###run metamap
 #start the server
 print(run_command("skrmedpostctl start"))
-metamap_command_line="metamap -I -p -J -K -8 --conj cgab,genf,lbpr,lbtr,patf,dsyn,fndg -R 'HPO' {0} {2}/{1}.tmp.metamap.o".format(args["input"],args["prefix"],args["outdir"])
+metamap_command_line="metamap -I -p -J -K -8 --conj cgab,genf,lbpr,lbtr,patf,dsyn,fndg -R 'HPO' {0} {2}/{1}.tmp.metamap.o".format(input_tmp_name,args["prefix"],args["outdir"])
 get_metamap_terms="grep 'C[0-9][0-9].*:*' {1}/{0}.tmp.metamap.o -o | sort | uniq | cut -d ':' -f 2 | sed 's/([^()].*)//g' | sed 's/\[[^][]*\]//g' > {1}/{0}.tmp.names".format(args["prefix"],args["outdir"])
 
 print("metamap command used:")
@@ -105,5 +119,9 @@ outfile.close()
 
 ###clean the work space
 for file in glob.glob(args["outdir"]+"/"+args["prefix"]+".tmp*"):
-    os.remove(file)
+    if os.path.isfile(file):
+        os.remove(file)
+
+if os.path.isfile(input_tmp_name):
+    os.remove(input_tmp_name)
 print("completed!")
