@@ -15,7 +15,7 @@ parser.add_argument("-d","--outdir",dest='outdir',default="out",
 parser.add_argument("-m","--omim",dest='omim',default=os.path.join(os.path.dirname(__file__), './db/OMIM_HGNCGenes.txt'),
                     help='path to the OMIM txt file')
 parser.add_argument("-x","--obo",dest='obo',default=os.path.join(os.path.dirname(__file__),'./db/hp.obo'),
-                    help='path to the OMIM txt file')
+                    help='path to HPO obo file')
 if len(sys.argv)==1:
     parser.print_help()
     sys.exit(1)
