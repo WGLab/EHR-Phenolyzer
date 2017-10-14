@@ -1,6 +1,8 @@
 import re
+
+#HPO file from http://purl.obolibrary.org/obo/hp.obo
 class Obo:
-    def __init__(self,obo_file="./db/hp.obo"):
+    def __init__(self,obo_file):
         self.obo_file=obo_file
 
     def umls2name(self):

@@ -12,7 +12,9 @@ parser.add_argument("-p","--prefix",dest='prefix',default="test",
                     help='the prefix for the output file')
 parser.add_argument("-d","--outdir",dest='outdir',default="out",
                     help='the path to the output folder')
-parser.add_argument("-m","--omim",dest='omim',default="./db/OMIM_HGNCGenes.txt",
+parser.add_argument("-m","--omim",dest='omim',default=os.path.join(os.path.dirname(__file__), './db/OMIM_HGNCGenes.txt'),
+                    help='path to the OMIM txt file')
+parser.add_argument("-x","--obo",dest='obo',default=os.path.join(os.path.dirname(__file__),'./db/hp.obo'),
                     help='path to the OMIM txt file')
 if len(sys.argv)==1:
     parser.print_help()
@@ -53,7 +55,7 @@ input_tmp.write(input_str_noascii)
 input_tmp.close()
 
 ###run metamap
-pt.run_metamap(input_tmp_name,args['prefix'],args['outdir'])
+pt.run_metamap(input_tmp_name,args['prefix'],args['obo'],args['outdir'])
 hpo_file=args['prefix']+".hpo.txt"
 #start the server
 #print(run_command("skrmedpostctl start"))

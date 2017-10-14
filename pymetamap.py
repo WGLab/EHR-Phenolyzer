@@ -25,9 +25,9 @@ def format_input(notes_file,outdir):
         return 0
 
 
-def get_hpo_names(umlsid_file,outfile_name,outdir="./"):
+def get_hpo_names(umlsid_file,outfile_name,obo_file,outdir="./"):
     names={}
-    op=Obo()
+    op=Obo(obo_file)
     name_dict=op.umls2name()
     with open(umlsid_file) as f:
         for line in f:
@@ -42,7 +42,7 @@ def get_hpo_names(umlsid_file,outfile_name,outdir="./"):
     return 0
 
 
-def run_metamap(notes_file,prefix,outdir="./"):
+def run_metamap(notes_file,prefix,obo_file,outdir="./"):
     if not os.path.exists(outdir):
         os.makedirs(outdir)
     commands="metamap -I -p -J -K -8 --conj cgab,genf,lbpr,lbtr,patf,dsyn,fndg -R 'HPO' {0} {1}/{2}.metamap.o".format(notes_file,outdir,prefix)
@@ -64,5 +64,5 @@ def run_metamap(notes_file,prefix,outdir="./"):
     outfile.write("\n".join(ids))
     outfile.close()
     hpo_file=prefix+".hpo.txt"
-    get_hpo_names(umlsid_file,hpo_file,outdir)
+    get_hpo_names(umlsid_file,hpo_file,obo_file,outdir)
 
