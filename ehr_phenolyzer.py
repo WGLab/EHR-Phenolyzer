@@ -1,5 +1,6 @@
 import argparse,os,subprocess
 import glob,sys,distutils.spawn
+import pymetamap as pt
 
 
 ###parse the arguments
@@ -52,24 +53,26 @@ input_tmp.write(input_str_noascii)
 input_tmp.close()
 
 ###run metamap
+pt.run_metamap(input_tmp_name,args['prefix'],args['outdir'])
+hpo_file=args['prefix']+".hpo.txt"
 #start the server
-print(run_command("skrmedpostctl start"))
-metamap_command_line="metamap -I -p -J -K -8 --conj cgab,genf,lbpr,lbtr,patf,dsyn,fndg -R 'HPO' {0} {2}/{1}.tmp.metamap.o".format(input_tmp_name,args["prefix"],args["outdir"])
-get_metamap_terms="grep 'C[0-9][0-9].*:*' {1}/{0}.tmp.metamap.o -o | sort | uniq | cut -d ':' -f 2 | sed 's/([^()].*)//g' | sed 's/\[[^][]*\]//g' > {1}/{0}.tmp.names".format(args["prefix"],args["outdir"])
-
-print("metamap command used:")
-print(metamap_command_line)
-print(run_command(metamap_command_line))
-print("HPO term extraction:")
-print(run_command(get_metamap_terms))
-print(get_metamap_terms)
-#stop the server
-print(run_command("skrmedpostctl stop"))
+#print(run_command("skrmedpostctl start"))
+#metamap_command_line="metamap -I -p -J -K -8 --conj cgab,genf,lbpr,lbtr,patf,dsyn,fndg -R 'HPO' {0} {2}/{1}.tmp.metamap.o".format(input_tmp_name,args["prefix"],args["outdir"])
+#get_metamap_terms="grep 'C[0-9][0-9].*:*' {1}/{0}.tmp.metamap.o -o | sort | uniq | cut -d ':' -f 2 | sed 's/([^()].*)//g' | sed 's/\[[^][]*\]//g' > {1}/{0}.tmp.names".format(args["prefix"],args["outdir"])
+#
+#print("metamap command used:")
+#print(metamap_command_line)
+#print(run_command(metamap_command_line))
+#print("HPO term extraction:")
+#print(run_command(get_metamap_terms))
+#print(get_metamap_terms)
+##stop the server
+#print(run_command("skrmedpostctl stop"))
 
 ###run phenolyzer
 
 print("run phenolyzer:")
-phenolyzer_command="disease_annotation.pl -f -p -ph -logistic -addon DB_DISGENET_GENE_DISEASE_SCORE,DB_GAD_GENE_DISEASE_SCORE -addon_weight 0.25 {1}/{0}.tmp.names -out {1}/{0}.tmp".format(args["prefix"],args["outdir"])
+phenolyzer_command="disease_annotation.pl -f -p -ph -logistic -addon DB_DISGENET_GENE_DISEASE_SCORE,DB_GAD_GENE_DISEASE_SCORE -addon_weight 0.25 {1}/{0} -out {1}/{2}.tmp".format(hpo_file,args["outdir"],args['prefix'])
 print(phenolyzer_command)
 print(run_command(phenolyzer_command))
 
@@ -97,7 +100,8 @@ with open(args["omim"]) as f:
 
 omim_genes=[]
 for gene in final_genes:
-    if mim_gene_dict.has_key(gene):
+    if gene in mim_gene_dict:
+    #if mim_gene_dict.has_key(gene):
         omim_genes.append(gene)
 
 ###output the result
