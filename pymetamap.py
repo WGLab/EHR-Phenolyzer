@@ -36,6 +36,7 @@ def get_hpo_names(umlsid_file,outfile_name,obo_file,outdir="./"):
                 name_arr=name_dict[uid]
             else:
                 print("Warning:"+uid+" not found in HPO database")
+                continue
             for name in name_arr:
                 names[name]=0
     outfile=open(outdir+"/"+outfile_name,"w")
