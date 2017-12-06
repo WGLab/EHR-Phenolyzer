@@ -38,19 +38,20 @@ class Obo:
         '''
         u2n_dict={}
         with open(self.obo_file) as f:
+            id=""
             name=''
             i=0
             for line in f:
                 line=line.rstrip()
-                if re.search("^name:",line):
-                    name=re.sub("^name: ","",line)
+                if re.search("^id:",line):
+                    id=re.sub("^id: ","",line)
                     i+=1
                     continue
-                if re.search("^id:",line):
-                    umls=re.sub("id: ","",line)
-                    if umls in u2n_dict:
-                        u2n_dict[umls].append(name)
-                        print("warning:"+umls+" occurred more than once")
+                if re.search("^name:",line):
+                    name=re.sub("name: ","",line)
+                    if id in u2n_dict:
+                        print(id+" duplidated")
+                        return False
                     else:
-                        u2n_dict[umls]=[name]
+                        u2n_dict[id]=[name] #TODO: change value to string
         return u2n_dict
