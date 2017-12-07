@@ -49,9 +49,10 @@ elif args["type"]=='id':
     for line in open(args["input"]):
         pid=line.rstrip()
         if pid in id2name:
-            names=id2name[pid]
-            for name in names:
-                names_dict[name]=0
+            name=id2name[pid]
+            names_dict[name]=0
+            #for name in names:
+            #    names_dict[name]=0
         else:
             print("Warning:"+pid+" in the input file can not found matched name")
     outfile.write("\n".join(names_dict.keys()))
