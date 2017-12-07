@@ -53,5 +53,33 @@ class Obo:
                         print(id+" duplidated")
                         return False
                     else:
-                        u2n_dict[id]=[name] #TODO: change value to string
+                        u2n_dict[id]=name 
+        return u2n_dict
+
+    def synonym2name(self):
+        '''
+        get synonym name---HPO official name dictionary
+        return:
+            HPO synonym name to official name dictionary
+        '''
+        u2n_dict={}
+        with open(self.obo_file) as f:
+            id=""
+            name=''
+            i=0
+            for line in f:
+                line=line.rstrip()
+                if re.search("^name:",line):
+                    name=re.sub("name: ","",line)
+                    i+=1
+                    continue
+                if re.search("^synonym:",line):
+                    sname=re.sub("synonym: ","",line)
+                    sname=sname.split("\" ")[0]
+                    sname=re.sub("\"","",sname)
+                    if id in u2n_dict:
+                        print(id+" duplidated")
+                        return False
+                    else:
+                        u2n_dict[sname]=name 
         return u2n_dict
