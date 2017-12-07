@@ -12,6 +12,9 @@ class TestStringMethods(unittest.TestCase):
     def test_umls2name(self):
         u2name_dict=obj.umls2name()
         self.assertEqual(u2name_dict["C3714581"][0],"Multicystic kidney dysplasia")
+    def test_name2id(self):
+        n2id_dict=obj.name2id()
+        self.assertEqual(n2id_dict["Multicystic kidney dysplasia"],"HP:0000003")
 
 
 if __name__ == '__main__':
