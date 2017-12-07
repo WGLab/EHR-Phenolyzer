@@ -83,3 +83,18 @@ class Obo:
                     else:
                         u2n_dict[sname]=name 
         return u2n_dict
+
+    def name2id(self):
+        '''
+        convert HPO offical name to HPO id
+        '''
+        id2name_dict=self.id2name()
+        n2id_dict={}
+        for id in id2name_dict:
+            name=id2name_dict[id]
+            if name in n2id_dict:
+                print(name+" duplicated")
+                return False
+            else:
+                n2id_dict[name]=id
+        return n2id_dict
