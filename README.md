@@ -47,7 +47,7 @@ optional arguments:
                         medical note file in txt format
   -p PREFIX, --prefix PREFIX
                         the prefix for the output file
-  -n NLP, --nlp NLP     types of NLP (metamap (default),medlee, NCBOannotator)
+  -n NLP, --nlp NLP     type of NLP (metamap (default),medlee, NCBOannotator)
   -d OUTDIR, --outdir OUTDIR
                         the path to the output folder
   -m OMIM, --omim OMIM  path to the OMIM txt file
