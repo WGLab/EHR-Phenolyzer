@@ -12,7 +12,7 @@ parser.add_argument('-i','--input', dest='input',required=True,
 parser.add_argument("-p","--prefix",dest='prefix',default="test",
                     help='the prefix for the output file')
 parser.add_argument("-n","--nlp",dest='nlp',default="metamap",
-                    help='types of NLP (metamap (default),medlee, NCBOannotator)')
+                    help='type of NLP (metamap (default),medlee, NCBOannotator)')
 parser.add_argument("-d","--outdir",dest='outdir',default="out",
                     help='the path to the output folder')
 parser.add_argument("-m","--omim",dest='omim',default=os.path.join(os.path.dirname(__file__), './db/OMIM_HGNCGenes.txt'),
