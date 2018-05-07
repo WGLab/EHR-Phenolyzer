@@ -9,6 +9,21 @@ EHR-Phenolyzer is a python pipeline to automatically translate raw clinical note
 3. phenolyzer
 4. linux environment
 
+## INSTALLATION
+
+### Install MetaMap
+
+1. register at UMLS Terminology Services (https://uts.nlm.nih.gov//license.html)
+2. download "MetaMap 2016V2 Linux Version" from https://metamap.nlm.nih.gov/MainDownload.shtml
+3. following the MetaMap installation instruction (https://metamap.nlm.nih.gov/Installation.shtml)
+4. export MetaMap executable binary to your linux system PATH (export PATH="/path/to/public_mm/bin:$PATH") 
+
+### Install Phenolyzer
+
+1. download Phenolyzer through "git clone https://github.com/WGLab/phenolyzer"
+2. install dependencies: Bioperl, Bio::OntologyIO and Graph::Directed 
+3. export phenolyzer executable file to your linux system PATH ( export PATH="/path/to/phenolyzer:$PATH")
+
 ## TEST 
 
 `python ehr_phenolyzer.py -i example/Kleyner_ANKRD11.txt -p kleyner > ehr_phenolyzer.log `
