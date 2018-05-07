@@ -1,0 +1,469 @@
+<medlee>
+<section c = "report unknown section item"><structured form = "xml">
+<problem v = "hypertension" code = "HP:0000822_Hypertension" idref = "p4"><degree v = "high degree" idref = "p2"></degree>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s1"></sid><code v = "HP:0000822_Hypertension" idref = "p4"></code>
+</problem>
+<problem v = "hypertension" code = "HP:0000822_Hypertension" idref = "p11"><bodymeas v = "diastolic" idref = "p9"></bodymeas>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s1"></sid><code v = "HP:0000822_Hypertension" idref = "p11"></code>
+</problem>
+<normalfinding v = "healthy" idref = "p32"><parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s1"></sid><status v = "previous" idref = "p30"></status>
+</normalfinding>
+<finding v = "elevated" idref = "p76"><bodymeas v = "blood pressure" code = "HP:0000822_Hypertension" idref = "p78"><code v = "HP:0000822_Hypertension" idref = "p78"></code>
+</bodymeas>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s2"></sid><status v = "history" idref = "p70"></status>
+<status v = "persistent" idref = "p74"></status>
+<timeper v = "presentation" idref = "p64"></timeper>
+<code v = "HP:0000822_Hypertension" idref = "p76 p78"></code>
+</finding>
+<problem v = "fatigue" code = "HP:0012378_Fatigue" idref = "p85"><descriptor v = "easy" idref = "p83"></descriptor>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s2"></sid><code v = "HP:0012378_Fatigue" idref = "p85"></code>
+</problem>
+<problem v = "palpitation" code = "HP:0001962_Palpitations" idref = "p90"><certainty v = "high certainty" idref = "p88"></certainty>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s2"></sid><code v = "HP:0001962_Palpitations" idref = "p90"></code>
+</problem>
+<med v = "medication" idref = "p102"><certainty v = "high certainty" idref = "p96"></certainty>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s3"></sid></med>
+<procedure v = "supplement" idref = "p106"><certainty v = "no" idref = "p100"></certainty>
+<parsemode v = "mode4"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s3"></sid></procedure>
+<bodymeas v = "blood pressure" code = "HP:0000822_Hypertension" idref = "p116"><certainty v = "ignore"></certainty>
+<parsemode v = "mode4"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s3"></sid><code v = "HP:0000822_Hypertension" idref = "p116"></code>
+</bodymeas>
+<bodymeas v = "gestation" idref = "p136"><parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s4"></sid></bodymeas>
+<status v = "past history" idref = "p144"><certainty v = "no" idref = "p140"></certainty>
+<degree v = "high degree" idref = "p142"></degree>
+<sectname v = "report unknown section item"></sectname>
+<parsemode v = "mode2"></parsemode>
+<sid idref = "s4"></sid></status>
+<problem v = "rhinitis" code = "HP:0012384_Rhinitis" idref = "p156"><certainty v = "high certainty" idref = "p150"></certainty>
+<change v = "allergy" idref = "p154"></change>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s4"></sid><code v = "HP:0012384_Rhinitis" idref = "p156"></code>
+<code v = "HP:0003193_Allergic rhinitis" idref = "p154 p156"></code>
+</problem>
+<procedure v = "physical examination" idref = "p162"><parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s5"></sid></procedure>
+<problem v = "congenital abnormality" idref = "p175"><certainty v = "no" idref = "p173"></certainty>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s5"></sid><timeper v = "child" idref = "p169"></timeper>
+</problem>
+<problem v = "obese" code = "HP:0001513_Obesity" idref = "p179"><certainty v = "no" idref = "p173"></certainty>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s5"></sid><timeper v = "child" idref = "p169"></timeper>
+<code v = "HP:0001513_Obesity" idref = "p179"></code>
+</problem>
+<bodymeas v = "stature" idref = "p191"><descriptor v = "short" idref = "p189"></descriptor>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s5"></sid><code v = "HP:0004322_Short stature" idref = "p189 p191"></code>
+<code v = "HP:0003510_Severe short stature" idref = "p189 p191"></code>
+</bodymeas>
+<bodymeas v = "height" idref = "p197"><certainty v = "high certainty" idref = "p193"></certainty>
+<measure v = "117 cm" idref = "p201"></measure>
+<parsemode v = "mode3"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s5"></sid></bodymeas>
+<finding v = "demo"><age v = "5 year" idref = "p206"></age>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s5"></sid></finding>
+<bodymeas v = "height" idref = "p239"><measure v = "150 cm" idref = "p243"></measure>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s5"></sid></bodymeas>
+<finding v = "demo"><age v = "17 year" idref = "p249"></age>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s5"></sid></finding>
+<bodymeas v = "weight" idref = "p263"><certainty v = "high certainty" idref = "p265"></certainty>
+<measure v = "22 kilogram" idref = "p267"></measure>
+<parsemode v = "mode3"></parsemode>
+<region v = "body" idref = "p261"></region>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s6"></sid></bodymeas>
+<bodymeas v = "blood pressure" code = "HP:0000822_Hypertension" idref = "p299"><certainty v = "high certainty" idref = "p281"></certainty>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s7"></sid><code v = "HP:0000822_Hypertension" idref = "p299"></code>
+</bodymeas>
+<bodymeas v = "measurement" idref = "p313"><measure v = "154/107 mmHg" idref = "p315"></measure>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s7"></sid></bodymeas>
+<bodymeas v = "height" idref = "p338"><parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s7"></sid></bodymeas>
+<problem v = "high blood pressure" code = "HP:0000822_Hypertension" idref = "p368"><certainty v = "high certainty" idref = "p363"></certainty>
+<date v = "20040000" idref = "p378"></date>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s7"></sid><code v = "HP:0000822_Hypertension" idref = "p368"></code>
+</problem>
+<problem v = "hypertension" code = "HP:0000822_Hypertension" idref = "p388"><certainty v = "high certainty" idref = "p390"></certainty>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s7"></sid><code v = "HP:0000822_Hypertension" idref = "p388"></code>
+</problem>
+<procedure v = "monitoring blood pressure" idref = "p404"><bodyfunc v = "ambulation" idref = "p402"><certainty v = "high certainty" idref = "p402"></certainty>
+</bodyfunc>
+<certainty v = "high certainty" idref = "p392"></certainty>
+<parsemode v = "mode5"></parsemode>
+<reltime v = "by" idref = "p394"><numunit v = "24 hour" idref = "p398"></numunit>
+</reltime>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s7"></sid></procedure>
+<bodymeas v = "systolic" idref = "p435"><certainty v = "high certainty" idref = "p425"></certainty>
+<measure v = "98 %" idref = "p445"></measure>
+<parsemode v = "mode4"></parsemode>
+<reltime v = "24 hour" idref = "p431"></reltime>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s7"></sid></bodymeas>
+<bodymeas v = "blood pressure" code = "HP:0000822_Hypertension" idref = "p437"><certainty v = "high certainty" idref = "p425"></certainty>
+<measure v = "98 %" idref = "p445"></measure>
+<parsemode v = "mode4"></parsemode>
+<reltime v = "24 hour" idref = "p431"></reltime>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s7"></sid><code v = "HP:0000822_Hypertension" idref = "p437"></code>
+</bodymeas>
+<bodymeas v = "diastolic" idref = "p450"><measure v = "94 %" idref = "p460"></measure>
+<parsemode v = "mode4"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s7"></sid></bodymeas>
+<bodymeas v = "blood pressure" code = "HP:0000822_Hypertension" idref = "p452"><certainty v = "high certainty"></certainty>
+<measure v = "94 %" idref = "p460"></measure>
+<parsemode v = "mode4"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s7"></sid><code v = "HP:0000822_Hypertension" idref = "p452"></code>
+</bodymeas>
+<bodymeas v = "systolic" idref = "p467"><parsemode v = "mode4"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s8"></sid><timeper v = "nocturnal" idref = "p469"></timeper>
+</bodymeas>
+<bodymeas v = "blood pressure" code = "HP:0000822_Hypertension" idref = "p477"><certainty v = "high certainty" idref = "p481"></certainty>
+<measure v = "13 %" idref = "p483"></measure>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s8"></sid><code v = "HP:0000822_Hypertension" idref = "p477"></code>
+</bodymeas>
+<bodymeas v = "diastolic" idref = "p488"><certainty v = "high certainty" idref = "p492"></certainty>
+<measure v = "20 %" idref = "p494"></measure>
+<parsemode v = "mode4"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s8"></sid></bodymeas>
+<problem v = "systolic murmur" idref = "p509"><bodyloc v = "sternal" idref = "p521"><region v = "upper" idref = "p519"><region v = "left" idref = "p517"></region>
+</region>
+<region v = "border" idref = "p523"></region>
+</bodyloc>
+<certainty v = "high certainty" idref = "p501"></certainty>
+<descriptor v = "soft" idref = "p505"></descriptor>
+<parsemode v = "mode4"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s9"></sid></problem>
+<problem v = "systolic murmur" idref = "p509"><bodyloc v = "sternal" idref = "p521"><region v = "upper" idref = "p519"><region v = "left" idref = "p517"></region>
+</region>
+<region v = "rest" idref = "p529"></region>
+</bodyloc>
+<certainty v = "high certainty" idref = "p525"></certainty>
+<descriptor v = "soft" idref = "p505"></descriptor>
+<parsemode v = "mode4"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s9"></sid></problem>
+<normalfinding v = "normal" idref = "p541"><certainty v = "high certainty" idref = "p539"></certainty>
+<parsemode v = "mode5"></parsemode>
+<procedure v = "physical examination" idref = "p535"></procedure>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s9"></sid></normalfinding>
+<problem v = "hypertension" code = "HP:0000822_Hypertension" idref = "p558"><certainty v = "high certainty" idref = "p548"></certainty>
+<parsemode v = "mode4"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s10"></sid><status v = "positive family history" idref = "p552"></status>
+<code v = "HP:0000822_Hypertension" idref = "p558"></code>
+</problem>
+<problem v = "hypertension" code = "HP:0000822_Hypertension" idref = "p578"><certainty v = "high certainty" idref = "p574"></certainty>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s11"></sid><code v = "HP:0000822_Hypertension" idref = "p578"></code>
+</problem>
+<med v = "class:antihypertensive agents" idref = "p607"><certainty v = "no" idref = "p601"></certainty>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s11"></sid></med>
+<med v = "lisinopril" idref = "p630"><parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s11"></sid><status v = "therapy" idref = "p626"></status>
+</med>
+<finding v = "short" idref = "p644"><certainty v = "high certainty" idref = "p640"></certainty>
+<family v = "mother" idref = "p636"></family>
+<parsemode v = "mode3"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s12"></sid></finding>
+<bodymeas v = "stature" idref = "p646"><parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s12"></sid></bodymeas>
+<bodymeas v = "height" idref = "p652"><certainty v = "high certainty" idref = "p648"></certainty>
+<measure v = "150 cm" idref = "p656"></measure>
+<parsemode v = "mode3"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s12"></sid></bodymeas>
+<bodymeas v = "height" idref = "p673"><measure v = "183 cm" idref = "p677"></measure>
+<parsemode v = "mode5"></parsemode>
+<problemdescr v = "normal" idref = "p671"></problemdescr>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s12"></sid></bodymeas>
+<problem v = "dead" idref = "p699"><certainty v = "high certainty" idref = "p685"></certainty>
+<descriptor v = "unexplained" idref = "p697"></descriptor>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s13"></sid><status v = "no family history" idref = "p687"></status>
+<status v = "sudden" idref = "p695"></status>
+<code v = "HP:0001699_Sudden death" idref = "p695 p699"></code>
+</problem>
+<problem v = "stroke" code = "HP:0001297_Stroke" idref = "p713"><parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s13"></sid><status v = "history" idref = "p709"></status>
+<code v = "HP:0001297_Stroke" idref = "p713"></code>
+</problem>
+<procedure v = "test" idref = "p730"><parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s14"></sid></procedure>
+<problem v = "hypertension" code = "HP:0000822_Hypertension" idref = "p757"><parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s14"></sid><status v = "persistent" idref = "p755"></status>
+<code v = "HP:0000822_Hypertension" idref = "p757"></code>
+</problem>
+<finding v = "demo"><age v = "5 year" idref = "p767"></age>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s14"></sid></finding>
+<problem v = "high blood pressure" code = "HP:0000822_Hypertension" idref = "p788"><date v = "20040000" idref = "p798"></date>
+<descriptor v = "group" idref = "p783"></descriptor>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s14"></sid><code v = "HP:0000822_Hypertension" idref = "p788"></code>
+</problem>
+<problem v = "hypertension" code = "HP:0000822_Hypertension" idref = "p823"><parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s15"></sid><code v = "HP:0000822_Hypertension" idref = "p823"></code>
+</problem>
+<problem v = "high blood pressure" code = "HP:0000822_Hypertension" idref = "p832"><date v = "20040000" idref = "p842"></date>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s15"></sid><code v = "HP:0000822_Hypertension" idref = "p832"></code>
+</problem>
+<procedure v = "evaluate" idref = "p852"><certainty v = "high certainty" idref = "p846"></certainty>
+<bodyloc v = "urinary tract" idref = "p850"></bodyloc>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s15"></sid></procedure>
+<procedure v = "blood test" idref = "p855"><certainty v = "high certainty" idref = "p846"></certainty>
+<bodyloc v = "urinary tract" idref = "p850"></bodyloc>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s15"></sid></procedure>
+<procedure v = "echocardiogram" idref = "p860"><certainty v = "high certainty" idref = "p846"></certainty>
+<bodyloc v = "urinary tract" idref = "p850"></bodyloc>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s15"></sid></procedure>
+<procedure v = "polysomnography" idref = "p863"><certainty v = "high certainty" idref = "p846"></certainty>
+<bodyloc v = "urinary tract" idref = "p850"></bodyloc>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s15"></sid></procedure>
+<procedure v = "ultrasound" idref = "p870"><bodyloc v = "kidney" idref = "p868"></bodyloc>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s15"></sid></procedure>
+<procedure v = "magnetic resonance imaging" idref = "p877"><bodyloc v = "kidney" idref = "p875"></bodyloc>
+<certainty v = "high certainty" idref = "p873"></certainty>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s15"></sid></procedure>
+<labtest v = "potassium" idref = "p903"><bodyloc v = "serum" idref = "p901"></bodyloc>
+<certainty v = "high certainty" idref = "p889"></certainty>
+<degree v = "low degree" idref = "p895"></degree>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s16"></sid><code v = "HP:0002900_Hypokalemia" idref = "p895 p901 p903"></code>
+</labtest>
+<procedure v = "serum aldosterone" idref = "p906"><parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s16"></sid></procedure>
+<labtest v = "renin" idref = "p915"><bodyloc v = "plasma" idref = "p913"></bodyloc>
+<certainty v = "high certainty" idref = "p911"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s16"></sid></labtest>
+<bodyfunc v = "activity" idref = "p917"><bodyloc v = "plasma" idref = "p913"></bodyloc>
+<certainty v = "high certainty" idref = "p911"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s16"></sid></bodyfunc>
+<procedure v = "serum aldosterone" idref = "p927"><bodymeas v = "measurement" idref = "p923"></bodymeas>
+<certainty v = "high certainty" idref = "p925"></certainty>
+<parsemode v = "mode4"></parsemode>
+<quantity v = "1.6" idref = "p935"></quantity>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s17"></sid></procedure>
+<labtest v = "renin" idref = "p945"><bodyloc v = "plasma" idref = "p943"></bodyloc>
+<measure v = "0.1 /ml" idref = "p951"></measure>
+<parsemode v = "mode4"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s17"></sid></labtest>
+<bodyfunc v = "activity" idref = "p947"><bodyloc v = "plasma" idref = "p943"></bodyloc>
+<certainty v = "high certainty"></certainty>
+<measure v = "0.1 /ml" idref = "p951"></measure>
+<parsemode v = "mode4"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s17"></sid></bodyfunc>
+<procedure v = "serum aldosterone" idref = "p963"><certainty v = "high certainty" idref = "p959"></certainty>
+<parsemode v = "mode3"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s17"></sid></procedure>
+<labtest v = "renin" idref = "p969"><measure v = "16" idref = "p975"></measure>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s17"></sid></labtest>
+<bodymeas v = "ratio" idref = "p971"><certainty v = "high certainty"></certainty>
+<measure v = "16" idref = "p975"></measure>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s17"></sid></bodymeas>
+<procedure v = "echocardiogram" idref = "p987"><certainty v = "high certainty" idref = "p983"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s18"></sid></procedure>
+<problem v = "end organ damage" idref = "p1003"><certainty v = "high certainty" idref = "p999"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s18"></sid></problem>
+<problem v = "left ventricular hypertrophy" code = "HP:0001712_Left ventricular hypertrophy" idref = "p1011"><parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s18"></sid><code v = "HP:0001712_Left ventricular hypertrophy" idref = "p1011"></code>
+</problem>
+<problem v = "secundum atrial septal defect" code = "HP:0001655_Patent foramen ovale!HP:0001684_Secundum atrial septal defect" idref = "p1021"><certainty v = "high certainty" idref = "p1017"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s18"></sid><code v = "HP:0001684_Secundum atrial septal defect" idref = "p1021"></code>
+<code v = "HP:0001655_Patent foramen ovale" idref = "p1021"></code>
+</problem>
+<procedure v = "lipid profile" idref = "p1033"><parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s19"></sid></procedure>
+<normalfinding v = "within normal limits" idref = "p1051"><certainty v = "high certainty" idref = "p1049"></certainty>
+<labtest v = "glucose" idref = "p1038"></labtest>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s19"></sid></normalfinding>
+<normalfinding v = "within normal limits" idref = "p1051"><certainty v = "high certainty" idref = "p1049"></certainty>
+<labtest v = "c-reactive protein" idref = "p1043"></labtest>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s19"></sid></normalfinding>
+<labtest v = "catecholamine" idref = "p1071"><bodyloc v = "urinary tract" idref = "p1069"></bodyloc>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s20"></sid></labtest>
+<med v = "metabolite" idref = "p1073"><parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s20"></sid></med>
+<finding v = "acid" idref = "p1084"><parsemode v = "mode4"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s20"></sid></finding>
+<finding v = "acid" idref = "p1091"><parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s20"></sid></finding>
+<normalfinding v = "normal" idref = "p1096"><certainty v = "high certainty" idref = "p1094"></certainty>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s20"></sid></normalfinding>
+<problem v = "abnormal" code = "HP:0000130_Abnormality of the uterus" idref = "p1114"><bodyloc v = "kidney" idref = "p1102"></bodyloc>
+<certainty v = "no" idref = "p1106"></certainty>
+<parsemode v = "mode1"></parsemode>
+<procedure v = "image" idref = "p1104"></procedure>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s21"></sid><code v = "HP:0000130_Abnormality of the uterus" idref = "p1114"></code>
+<code v = "HP:0012210_Abnormal renal morphology" idref = "p1102 p1114"></code>
+</problem>
+<procedure v = "electrocardiogram" idref = "p1120"><parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s22"></sid></procedure>
+<bodyfunc v = "conduction" idref = "p1126"><parsemode v = "mode1"></parsemode>
+<problemdescr v = "normal" idref = "p1124"></problemdescr>
+<reltime v = "_"><timeunit v = "interval" idref = "p1128"></timeunit>
+</reltime>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s22"></sid></bodyfunc>
+<normalfinding v = "normal" idref = "p1140"><certainty v = "high certainty" idref = "p1138"></certainty>
+<parsemode v = "mode1"></parsemode>
+<procedure v = "polysomnography" idref = "p1134"></procedure>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s22"></sid></normalfinding>
+<problem v = "hypokalemia" code = "HP:0002900_Hypokalemia" idref = "p1153"><certainty v = "high certainty" idref = "p1145"></certainty>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s23"></sid><status v = "persistent" idref = "p1151"></status>
+<code v = "HP:0002900_Hypokalemia" idref = "p1153"></code>
+</problem>
+<labtest v = "renin" idref = "p1165"><certainty v = "high certainty" idref = "p1155"></certainty>
+<bodyloc v = "plasma" idref = "p1159"></bodyloc>
+<degree v = "low degree" idref = "p1157"></degree>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s23"></sid></labtest>
+<labtest v = "aldosterone" idref = "p1169"><parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s23"></sid></labtest>
+<problem v = "hypertension" code = "HP:0000822_Hypertension" idref = "p1180"><certainty v = "moderate certainty" idref = "p1184"></certainty>
+<parsemode v = "mode4"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s23"></sid><code v = "HP:0000822_Hypertension" idref = "p1180"></code>
+</problem>
+<procedure v = "evaluate" idref = "p1202"><descriptor v = "genetic" idref = "p1206"></descriptor>
+<parsemode v = "mode3"></parsemode>
+<proceduredescr v = "examination" code = "HP:0100279_Ulcerative colitis" idref = "p1208"><code v = "HP:0100279_Ulcerative colitis" idref = "p1208"></code>
+</proceduredescr>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s24"></sid></procedure>
+<finding v = "demo"><age v = "17 year" idref = "p1222"></age>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s24"></sid></finding>
+<procedure v = "examination" code = "HP:0100279_Ulcerative colitis" idref = "p1242"><parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s24"></sid><code v = "HP:0100279_Ulcerative colitis" idref = "p1242"></code>
+</procedure>
+
+</structured>
+<tt><sent id = "s1"><phr id = "p2">Severe</phr> <phr id = "p4">hypertension</phr>, especially <phr id = "p9">diastolic</phr> <phr id = "p11">hypertension</phr>, was diagnosed at age 5 yr in a <phr id = "p30">previously</phr> <phr id = "p32">healthy</phr> Caucasian (non-Hispanic white) girl and <undef>followed</undef> until 17 yr of age.</sent><sent id = "s2"> She <phr id = "p64">presented with</phr> a <phr id = "p70">history of</phr> <phr id = "p74">persistently</phr> <phr id = "p76">elevated</phr> <phr id = "p78">blood pressures</phr>, <phr id = "p83">easy</phr> <phr id = "p85">fatigue</phr>, <phr id = "p88">and</phr> <phr id = "p90">palpitations</phr>.</sent><sent id = "s3"> She <phr id = "p96">was on</phr> <phr id = "p100">no</phr> <phr id = "p102">medications</phr> or <phr id = "p106">supplements</phr> that <phr id = "p110">could</phr> <undef>elevate</undef> her <phr id = "p116">blood pressure</phr>.</sent><sent id = "s4"> She was <undef>born</undef> at 39 wk of <phr id = "p136">gestation</phr> with <phr id = "p140">no</phr> <phr id = "p142">significant</phr> <phr id = "p144">past medical history</phr> <phr id = "p150">except for</phr> <phr id = "p154">allergic</phr> <phr id = "p156">rhinitis</phr>.</sent><sent id = "s5"> On <phr id = "p162">physical examination</phr>, the <phr id = "p169">child</phr> <phr id = "p171">had</phr> <phr id = "p173">no</phr> <phr id = "p175">dysmorphism</phr> or <phr id = "p179">obesity</phr> but she had a <phr id = "p189">short</phr> <phr id = "p191">stature</phr> <phr id = "p193">with</phr> a <phr id = "p197">height</phr> of <phr id = "p201">117cm</phr> at <phr id = "p206">5 yr</phr> of age, which was less than the 5th percentile at diagnosis, and a <phr id = "p239">height</phr> of <phr id = "p243">150 cm</phr> at <phr id = "p249">17 yr</phr> of age.</sent><sent id = "s6"> Her <phr id = "p261">body</phr> <phr id = "p263">weight</phr> <phr id = "p265">was</phr> <phr id = "p267">22 kg</phr> at diagnosis.</sent><sent id = "s7"> She was <phr id = "p281">found to have</phr> an average of three <undef>measurements</undef> of <phr id = "p299">blood pressure</phr> in three <undef>different</undef> clinic <undef>visits</undef> <phr id = "p313">measuring</phr> <phr id = "p315">154/107 mmHg</phr>, which was above the <undef>gender</undef>, age, and <phr id = "p338">height</phr> percentile-specific 99th percentile (119/82 mmHg) per the Fourth <phr id = "p363">Report</phr> (<undef>National</undef> <phr id = "p368">High Blood Pressure</phr> <undef>Education</undef> <undef>Program</undef> <phr id = "p378">2004</phr>), <phr id = "p382">and</phr> the <phr id = "p386">sustained</phr> <phr id = "p388">hypertension</phr> <phr id = "p390">was</phr> <phr id = "p392">confirmed</phr> <phr id = "p394">by</phr> a <phr id = "p398">24-h</phr> <phr id = "p402">ambulatory</phr> <phr id = "p404">blood pressure monitoring</phr> with an average of 137/96 mmHg, <phr id = "p425">along with</phr> a <phr id = "p431">24-h</phr> <phr id = "p435">systolic</phr> <phr id = "p437">blood pressure</phr> <undef>load</undef> of <phr id = "p445">98%</phr> and <phr id = "p450">diastolic</phr> <phr id = "p452">blood pressure</phr> <undef>load</undef> of <phr id = "p460">94%</phr>.</sent><sent id = "s8"> The <phr id = "p467">systolic</phr> <phr id = "p469">nocturnal</phr> <undef>dip</undef> in the <phr id = "p477">blood pressures</phr> <phr id = "p481">was</phr> <phr id = "p483">13%</phr> and <phr id = "p488">diastolic</phr> <undef>dip</undef> <phr id = "p492">was</phr> <phr id = "p494">20%</phr>.</sent><sent id = "s9"> She <phr id = "p501">had</phr> a <phr id = "p505">soft</phr> <undef>ejection</undef> <phr id = "p509">systolic murmur</phr> at the <phr id = "p517">left</phr> <phr id = "p519">upper</phr> <phr id = "p521">sternal</phr> <phr id = "p523">border</phr> <phr id = "p525">and</phr> the <phr id = "p529">rest of</phr> her <phr id = "p535">physical examination</phr> <phr id = "p539">was</phr> <phr id = "p541">unremarkable</phr>.</sent><sent id = "s10">
+
+There <phr id = "p548">was</phr> a <phr id = "p552">family history of</phr> <phr id = "p558">hypertension</phr> (<undef>Fig</undef>.</sent><sent id = "s11"> 1) with both parents <phr id = "p574">diagnosed with</phr> <phr id = "p578">hypertension</phr>, her mother diagnosed at the age of 35 yr but <phr id = "p601">not</phr> taking any <phr id = "p607">antihypertensive</phr> medications and father at 19 yr of age, <phr id = "p626">treated with</phr> <phr id = "p630">lisinopril</phr>.</sent><sent id = "s12"> The <phr id = "p636">mother</phr> also <phr id = "p640">had</phr> a <phr id = "p644">short</phr> <phr id = "p646">stature</phr> <phr id = "p648">with</phr> a <phr id = "p652">height</phr> of <phr id = "p656">150 cm</phr>, whereas her father was of <phr id = "p671">normal</phr> <phr id = "p673">height</phr> at <phr id = "p677">183 cm</phr>.</sent><sent id = "s13"> There <phr id = "p685">was</phr> <phr id = "p687">no family history of</phr> <phr id = "p695">sudden</phr> <phr id = "p697">unexplained</phr> <phr id = "p699">death</phr> but there was a <phr id = "p709">history of</phr> <phr id = "p713">stroke</phr> in the maternal grandmother.</sent><sent id = "s14">
+
+Upon further <phr id = "p730">evaluation</phr> at the tertiary hypertension clinic, the child was confirmed to have <phr id = "p755">persistent</phr> <phr id = "p757">hypertension</phr> at the age of <phr id = "p767">5 yr</phr> per recommendations by the Fourth <undef>Working</undef> <phr id = "p783">Group</phr> (<undef>National</undef> <phr id = "p788">High Blood Pressure</phr> <undef>Education</undef> <undef>Program</undef> <phr id = "p798">2004</phr>).</sent><sent id = "s15"> She underwent a thorough evaluation for other secondary causes of <phr id = "p823">hypertension</phr> per recommendations (<undef>National</undef> <phr id = "p832">High Blood Pressure</phr> <undef>Education</undef> <undef>Program</undef> <phr id = "p842">2004</phr>), <phr id = "p846">including</phr> a <phr id = "p850">urinary</phr> <phr id = "p852">evaluation</phr>, <phr id = "p855">blood tests</phr>, <phr id = "p860">echocardiogram</phr><phr id = "p861">,</phr> <phr id = "p863">sleep study</phr><phr id = "p866">,</phr> <phr id = "p868">renal</phr> <phr id = "p870">ultrasound</phr>, <phr id = "p873">and</phr> <phr id = "p875">renal</phr> <phr id = "p877">magnetic resonance imaging</phr>.</sent><sent id = "s16"> She <phr id = "p887">was</phr> <phr id = "p889">found to have</phr> <phr id = "p895">low</phr> levels of <phr id = "p901">serum</phr> <phr id = "p903">potassium</phr><phr id = "p904">,</phr> <phr id = "p906">serum aldosterone</phr>, <phr id = "p911">and</phr> <phr id = "p913">plasma</phr> <phr id = "p915">renin</phr> <phr id = "p917">activity</phr>.</sent><sent id = "s17"> These <phr id = "p923">measures</phr> <phr id = "p925">were</phr> <phr id = "p927">serum aldosterone</phr> levels of <phr id = "p935">1.6</phr> <undef>ng</undef>/dL and <phr id = "p943">plasma</phr> <phr id = "p945">renin</phr> <phr id = "p947">activity</phr> of <phr id = "p951">0.1 <undef>ng</undef>/mL</phr>/h <phr id = "p959">with</phr> a <phr id = "p963">serum aldosterone</phr> to <phr id = "p969">renin</phr> <phr id = "p971">ratio</phr> of <phr id = "p975">16</phr>.</sent><sent id = "s18"> She also <phr id = "p983">underwent</phr> an <phr id = "p987">echocardiogram</phr> <phr id = "p989">and</phr> <phr id = "p991">was</phr> <phr id = "p993">found to have</phr> <phr id = "p999">evidence of</phr> <phr id = "p1003">end-organ damage</phr> <phr id = "p1009">with</phr> <phr id = "p1011">left ventricular hypertrophy</phr> <phr id = "p1017">and</phr> a <phr id = "p1021">secundum atrial septal defect</phr>.</sent><sent id = "s19"> Her <phr id = "p1033">lipid profile</phr><phr id = "p1036">,</phr> <phr id = "p1038">glucose</phr>, <phr id = "p1041">and</phr> <phr id = "p1043">C-reactive protein</phr> <phr id = "p1049">were</phr> <phr id = "p1051">within normal limits</phr>.</sent><sent id = "s20"> A 24-h <undef>measurement</undef> of <phr id = "p1069">urinary</phr> <phr id = "p1071">catecholamine</phr> <phr id = "p1073">metabolites</phr> (<undef>metanephrine</undef>, <undef>normetanephrine</undef>, <undef>homovanillic</undef> <phr id = "p1084">acid</phr>, and <undef>vanillylmandelic</undef> <phr id = "p1091">acid</phr>) <phr id = "p1094">was</phr> <phr id = "p1096">normal</phr>.</sent><sent id = "s21"> Her <phr id = "p1102">renal</phr> <phr id = "p1104">imaging</phr> <phr id = "p1106">did not</phr> reveal any <phr id = "p1114">abnormalities</phr>.</sent><sent id = "s22"> Her <phr id = "p1120">electrocardiogram</phr> <phr id = "p1122">showed</phr> <phr id = "p1124">normal</phr> <phr id = "p1126">conduction</phr> <phr id = "p1128">intervals</phr> <phr id = "p1130">and</phr> the <phr id = "p1134">sleep study</phr> <phr id = "p1138">was</phr> <phr id = "p1140">normal</phr>.</sent><sent id = "s23">
+
+<phr id = "p1145">Because of</phr> the <phr id = "p1151">persistent</phr> <phr id = "p1153">hypokalemia</phr> <phr id = "p1155">with</phr> <phr id = "p1157">low</phr> <phr id = "p1159">plasma</phr> levels of <phr id = "p1165">renin</phr> and <phr id = "p1169">aldosterone</phr>, a <undef>monogenic</undef> form of <phr id = "p1180">hypertension</phr> was <phr id = "p1184">suspected</phr>.</sent><sent id = "s24"> However, because of family <undef>preference</undef>, further <phr id = "p1202">evaluation</phr> by <phr id = "p1206">genetic</phr> <phr id = "p1208">studies</phr> was deferred until the age of <phr id = "p1222">17 yr</phr> when the family <undef>agreed</undef> to <undef>participate</undef> in a <phr id = "p1242">study</phr> <undef>protocol</undef> in which the <undef>WES</undef> was provided without any <undef>charge</undef> to the family.</sent></tt></section>
+
+</medlee>

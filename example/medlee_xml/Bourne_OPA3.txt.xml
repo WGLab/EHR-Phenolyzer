@@ -1,0 +1,573 @@
+<medlee>
+<section c = "report unknown section item"><structured form = "xml">
+<finding v = "demo"><parsemode v = "mode4"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sex v = "female" idref = "p4"></sex>
+<sid idref = "s1"></sid></finding>
+<problem v = "nystagmus" code = "HP:0000639_Nystagmus" idref = "p14"><parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s1"></sid><timeper v = "birth" idref = "p18"><reltime v = "at" idref = "p16"></reltime>
+</timeper>
+<timeper v = "presentation" idref = "p10"></timeper>
+<code v = "HP:0000639_Nystagmus" idref = "p14"></code>
+</problem>
+<problem v = "cataract" code = "HP:0000518_Cataract" idref = "p24"><parsemode v = "mode2"></parsemode>
+<region v = "bilateral" idref = "p22"></region>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s1"></sid><code v = "HP:0000518_Cataract" idref = "p24"></code>
+<code v = "HP:0000519_Congenital cataract" idref = "p22 p24"></code>
+</problem>
+<procedure v = "detection" idref = "p32"><age v = "3 month" idref = "p36"></age>
+<certainty v = "high certainty" idref = "p28"></certainty>
+<frequency v = "1" idref = "p30"></frequency>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s1"></sid></procedure>
+<bodymeas v = "visual acuity" idref = "p83"><change v = "better" idref = "p73"><certainty v = "no" idref = "p69"></certainty>
+</change>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s2"></sid><status v = "correction" idref = "p81"></status>
+</bodymeas>
+<finding v = "demo"><age v = "6 year" idref = "p93"></age>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s3"></sid></finding>
+<problem v = "atrophy" code = "HP:0004334_Dermal atrophy" idref = "p112"><bodyloc v = "optic nerve" idref = "p108"></bodyloc>
+<certainty v = "high certainty" idref = "p102"></certainty>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s3"></sid><code v = "HP:0004334_Dermal atrophy" idref = "p112"></code>
+<code v = "HP:0000648_Optic atrophy" idref = "p108 p112"></code>
+</problem>
+<procedure v = "test" idref = "p128"><certainty v = "high certainty" idref = "p114"></certainty>
+<parsemode v = "mode4"></parsemode>
+<proceduredescr v = "visual evoked potential procedure" idref = "p118"></proceduredescr>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s3"></sid></procedure>
+<procedure v = "test" idref = "p136"><parsemode v = "mode4"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s4"></sid></procedure>
+<procedure v = "visual evoked potential procedure" idref = "p152"><bodyloc v = "eye" idref = "p160"><region v = "left" idref = "p160"></region>
+<region v = "right" idref = "p160"></region>
+</bodyloc>
+<degree v = "high degree" idref = "p148"></degree>
+<parsemode v = "mode5"></parsemode>
+<problemdescr v = "abnormal" code = "HP:0000130_Abnormality of the uterus" idref = "p150"><code v = "HP:0000130_Abnormality of the uterus" idref = "p150"></code>
+</problemdescr>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s4"></sid><code v = "HP:0000649_Abnormality of visual evoked potentials" idref = "p150 p152"></code>
+</procedure>
+<normalfinding v = "healthy" idref = "p172"><certainty v = "unestablished" idref = "p170"></certainty>
+<parsemode v = "mode3"></parsemode>
+<reltime v = "until" idref = "p174"><numunit v = "12 year" idref = "p176"></numunit>
+</reltime>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s5"></sid></normalfinding>
+<problem v = "ataxia" code = "HP:0001251_Ataxia!HP:0010867_Dyssynergia" idref = "p192"><certainty v = "high certainty" idref = "p190"></certainty>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s5"></sid><status v = "start" idref = "p188"></status>
+<code v = "HP:0010867_Dyssynergia" idref = "p192"></code>
+<code v = "HP:0001251_Ataxia" idref = "p192"></code>
+</problem>
+<problem v = "ataxia" code = "HP:0001251_Ataxia!HP:0010867_Dyssynergia" idref = "p209"><bodyloc v = "lower limb" idref = "p221"></bodyloc>
+<certainty v = "high certainty" idref = "p213"></certainty>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s6"></sid><status v = "initial" idref = "p211"></status>
+<code v = "HP:0010867_Dyssynergia" idref = "p209"></code>
+<code v = "HP:0001251_Ataxia" idref = "p209"></code>
+</problem>
+<problem v = "ataxia" code = "HP:0001251_Ataxia!HP:0010867_Dyssynergia" idref = "p246"><certainty v = "moderate certainty" idref = "p242"></certainty>
+<parsemode v = "mode4"></parsemode>
+<reltime v = "at" idref = "p248"><numunit v = "15 year" idref = "p251"></numunit>
+</reltime>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s6"></sid><code v = "HP:0010867_Dyssynergia" idref = "p246"></code>
+<code v = "HP:0001251_Ataxia" idref = "p246"></code>
+</problem>
+<problem v = "fall" code = "HP:0002527_Falls" idref = "p267"><age v = "17" idref = "p273"></age>
+<certainty v = "high certainty" idref = "p265"></certainty>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s7"></sid><status v = "start" idref = "p263"></status>
+<code v = "HP:0002527_Falls" idref = "p267"></code>
+</problem>
+<problem v = "peripheral neuropathy" code = "HP:0009830_Peripheral neuropathy" idref = "p285"><certainty v = "high certainty" idref = "p281"></certainty>
+<parsemode v = "mode4"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s7"></sid><code v = "HP:0009830_Peripheral neuropathy" idref = "p285"></code>
+</problem>
+<procedure v = "nerve conduction testing" idref = "p291"><age v = "21" idref = "p305"></age>
+<certainty v = "high certainty" idref = "p297"></certainty>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s7"></sid></procedure>
+<procedure v = "nerve conduction testing" idref = "p311"><certainty v = "high certainty" idref = "p317"></certainty>
+<degree v = "complete degree" idref = "p321"></degree>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s8"></sid></procedure>
+<bodyfunc v = "sensory" idref = "p329"><certainty v = "no" idref = "p323"></certainty>
+<parsemode v = "mode1"></parsemode>
+<quantity v = "all" idref = "p327"></quantity>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s8"></sid></bodyfunc>
+<bodyfunc v = "response" idref = "p331"><certainty v = "no" idref = "p323"></certainty>
+<parsemode v = "mode1"></parsemode>
+<quantity v = "all" idref = "p327"></quantity>
+<region v = "upper" idref = "p337"></region>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s8"></sid></bodyfunc>
+<procedure v = "knee strapping" idref = "p341"><certainty v = "no" idref = "p323"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s8"></sid></procedure>
+<procedure v = "examination" code = "HP:0100279_Ulcerative colitis" idref = "p353"><bodyfunc v = "conduction" idref = "p351"></bodyfunc>
+<bodyloc v = "motor nerve" idref = "p347"></bodyloc>
+<bodyloc v = "upper limb" idref = "p359"></bodyloc>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s9"></sid><code v = "HP:0100279_Ulcerative colitis" idref = "p353"></code>
+</procedure>
+<normalfinding v = "normal" idref = "p365"><parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s9"></sid></normalfinding>
+<problem v = "finding" idref = "p376"><certainty v = "no" idref = "p374"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s9"></sid></problem>
+<problem v = "demyelination" code = "HP:0011096_Peripheral demyelination" idref = "p382"><certainty v = "ignore"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s9"></sid><code v = "HP:0011096_Peripheral demyelination" idref = "p382"></code>
+</problem>
+<problem v = "neuropathy" code = "HP:0009830_Peripheral neuropathy" idref = "p405"><change v = "worse" idref = "p399"></change>
+<locative v = "between" idref = "p407"></locative>
+<parsemode v = "mode5"></parsemode>
+<quantity v = "17" idref = "p409"></quantity>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s10"></sid><code v = "HP:0009830_Peripheral neuropathy" idref = "p405"></code>
+</problem>
+<finding v = "demo"><age v = "27 year" idref = "p413"></age>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s10"></sid></finding>
+<finding v = "increase" code = "HP:0003676_Progressive" idref = "p426"><parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s10"></sid><code v = "HP:0003676_Progressive" idref = "p426"></code>
+</finding>
+<change v = "decrease" idref = "p430"><certainty v = "high certainty" idref = "p428"></certainty>
+<parsemode v = "mode5"></parsemode>
+<reltime v = "for" idref = "p432"><numunit v = "few year" idref = "p438"></numunit>
+</reltime>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s10"></sid></change>
+<bodymeas v = "visual acuity" idref = "p446"><certainty v = "high certainty" idref = "p450"></certainty>
+<change v = "worse" idref = "p452"></change>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s11"></sid></bodymeas>
+<finding v = "decrease" idref = "p459"><parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s11"></sid><timeper v = "birth" idref = "p456"><reltime v = "since" idref = "p454"></reltime>
+</timeper>
+</finding>
+<status v = "now" idref = "p481"><sectname v = "report unknown section item"></sectname>
+<parsemode v = "mode5"></parsemode>
+<sid idref = "s11"></sid></status>
+<problem v = "palinopsia" idref = "p495"><certainty v = "high certainty" idref = "p491"></certainty>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s12"></sid></problem>
+<problem v = "effect" idref = "p501"><certainty v = "high certainty" idref = "p497"></certainty>
+<parsemode v = "mode4"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s12"></sid></problem>
+<bodyfunc v = "vision" idref = "p506"><parsemode v = "mode2"></parsemode>
+<quantity v = "double" idref = "p504"></quantity>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s12"></sid></bodyfunc>
+<bodyfunc v = "vision" idref = "p511"><parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s12"></sid></bodyfunc>
+<finding v = "demo"><age v = "23 year" idref = "p521"></age>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s13"></sid></finding>
+<problem v = "cutis marmorata" code = "HP:0000965_Cutis marmorata" idref = "p530"><bodyloc v = "extremity" idref = "p538"></bodyloc>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s13"></sid><code v = "HP:0000965_Cutis marmorata" idref = "p530"></code>
+</problem>
+<procedure v = "phenotype determination" idref = "p545"><parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s13"></sid></procedure>
+<problem v = "optic atrophy and cataract, autosomal dominant" idref = "p549"><parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s13"></sid></problem>
+<problem v = "vasomotor instability" idref = "p562"><certainty v = "moderate certainty" idref = "p554"></certainty>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s13"></sid></problem>
+<problem v = "finding" idref = "p576"><bodyloc v = "cerebellum" idref = "p574"></bodyloc>
+<certainty v = "high certainty" idref = "p572"></certainty>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s14"></sid></problem>
+<problem v = "tremor intention" code = "HP:0030186_Kinetic tremor" idref = "p584"><certainty v = "high certainty" idref = "p578"></certainty>
+<degree v = "high degree" idref = "p582"></degree>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s14"></sid><code v = "HP:0030186_Kinetic tremor" idref = "p584"></code>
+</problem>
+<problem v = "dysdiadochokinesia" code = "HP:0002075_Dysdiadochokinesis" idref = "p589"><parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s14"></sid><code v = "HP:0002075_Dysdiadochokinesis" idref = "p589"></code>
+</problem>
+<problem v = "dysarthria" code = "HP:0001260_Dysarthria" idref = "p596"><degree v = "low degree" idref = "p594"></degree>
+<parsemode v = "mode3"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s14"></sid><code v = "HP:0001260_Dysarthria" idref = "p596"></code>
+</problem>
+<problem v = "ataxia" code = "HP:0001251_Ataxia!HP:0010867_Dyssynergia" idref = "p615"><parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s14"></sid><code v = "HP:0010867_Dyssynergia" idref = "p615"></code>
+<code v = "HP:0001251_Ataxia" idref = "p615"></code>
+</problem>
+<problem v = "chorea" code = "HP:0002072_Chorea" idref = "p633"><certainty v = "high certainty" idref = "p629"></certainty>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s15"></sid><code v = "HP:0002072_Chorea" idref = "p633"></code>
+</problem>
+<bodyfunc v = "posture" idref = "p636"><parsemode v = "mode2"></parsemode>
+<problemdescr v = "tremor" code = "HP:0001337_Tremor" idref = "p638"><code v = "HP:0001337_Tremor" idref = "p638"></code>
+</problemdescr>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s15"></sid><code v = "HP:0002174_Postural tremor" idref = "p636 p638"></code>
+</bodyfunc>
+<problem v = "tremor" code = "HP:0001337_Tremor" idref = "p645"><bodyloc v = "vocal cord" idref = "p643"></bodyloc>
+<certainty v = "high certainty" idref = "p641"></certainty>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s15"></sid><code v = "HP:0001337_Tremor" idref = "p645"></code>
+<code v = "HP:0012477_Vocal tremor" idref = "p643 p645"></code>
+</problem>
+<normalfinding v = "normal" idref = "p653"><bodyloc v = "face" idref = "p655"></bodyloc>
+<certainty v = "high certainty" idref = "p651"></certainty>
+<descriptor v = "feature" idref = "p657"></descriptor>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s16"></sid></normalfinding>
+<bodyfunc v = "intelligence" idref = "p681"><certainty v = "high certainty" idref = "p675"></certainty>
+<parsemode v = "mode2"></parsemode>
+<problemdescr v = "normal" idref = "p679"></problemdescr>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s16"></sid></bodyfunc>
+<problem v = "lipodystrophy" code = "HP:0009125_Lipodystrophy" idref = "p695"><certainty v = "moderate certainty" idref = "p697"></certainty>
+<descriptor v = "secondary" idref = "p693"></descriptor>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s17"></sid><code v = "HP:0009125_Lipodystrophy" idref = "p695"></code>
+</problem>
+<problem v = "wasting" idref = "p711"><bodyloc v = "muscle" idref = "p715"></bodyloc>
+<descriptor v = "generalized" idref = "p709"></descriptor>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s17"></sid><code v = "HP:0003202_Skeletal muscle atrophy" idref = "p711 p715"></code>
+<code v = "HP:0009055_Generalized limb muscle atrophy" idref = "p709 p711 p715"></code>
+</problem>
+<problem v = "wasting" idref = "p711"><bodyloc v = "subcutaneous" idref = "p719"></bodyloc>
+<certainty v = "high certainty" idref = "p717"></certainty>
+<descriptor v = "generalized" idref = "p709"></descriptor>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s17"></sid></problem>
+<problem v = "fatty" idref = "p721"><parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s17"></sid></problem>
+<bodyfunc v = "light touch" idref = "p744"><certainty v = "high certainty" idref = "p740"></certainty>
+<change v = "decrease" idref = "p742"></change>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s18"></sid></bodyfunc>
+<bodyfunc v = "sensation" idref = "p748"><bodyloc v = "knee" idref = "p752"><bodyloc v = "metacarpophalangeal joint" idref = "p764"><bodyloc v = "hand" idref = "p772"></bodyloc>
+</bodyloc>
+<region v = "distally" idref = "p754"></region>
+</bodyloc>
+<certainty v = "high certainty" idref = "p740"></certainty>
+<change v = "decrease" idref = "p742"></change>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s18"></sid><code v = "HP:0003474_Sensory impairment" idref = "p742 p748"></code>
+</bodyfunc>
+<bodyfunc v = "sensation" idref = "p748"><bodyloc v = "knee" idref = "p752"><bodyloc v = "metacarpophalangeal joint" idref = "p764"><bodyloc v = "hand" idref = "p772"></bodyloc>
+</bodyloc>
+<region v = "distal" idref = "p758"></region>
+</bodyloc>
+<certainty v = "high certainty" idref = "p756"></certainty>
+<change v = "decrease" idref = "p742"></change>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s18"></sid><code v = "HP:0002936_Distal sensory impairment" idref = "p742 p748 p758"></code>
+<code v = "HP:0003474_Sensory impairment" idref = "p742 p748"></code>
+</bodyfunc>
+<normalfinding v = "normal" idref = "p784"><bodyloc v = "blood" idref = "p776"></bodyloc>
+<certainty v = "high certainty" idref = "p780"></certainty>
+<parsemode v = "mode4"></parsemode>
+<reltime v = "10 year" idref = "p792"></reltime>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s19"></sid></normalfinding>
+<problem v = "neutropenia" code = "HP:0001875_Neutropenia!HP:0001882_Leukopenia" idref = "p805"><certainty v = "high certainty" idref = "p797"></certainty>
+<degree v = "low degree" idref = "p803"></degree>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s19"></sid><status v = "occasional" idref = "p801"></status>
+<code v = "HP:0001882_Leukopenia" idref = "p805"></code>
+<code v = "HP:0001875_Neutropenia" idref = "p805"></code>
+</problem>
+<labtest v = "creatine kinase" idref = "p815"><change v = "increase" idref = "p811"><degree v = "low degree" idref = "p809"></degree>
+</change>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s19"></sid><code v = "HP:0003236_Elevated serum creatine phosphokinase" idref = "p811 p815"></code>
+<code v = "HP:0008180_Mildly elevated creatine phosphokinase" idref = "p809 p811 p815"></code>
+</labtest>
+<procedure v = "cholesterol diet" idref = "p823"><degree v = "complete degree" idref = "p821"></degree>
+<parsemode v = "mode4"></parsemode>
+<quantity v = "1" idref = "p828"></quantity>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s19"></sid></procedure>
+<procedure v = "urinalysis" idref = "p833"><certainty v = "high certainty" idref = "p835"></certainty>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s20"></sid></procedure>
+<labtest v = "ketones" idref = "p841"><certainty v = "high certainty" idref = "p837"></certainty>
+<degree v = "moderate degree" idref = "p839"></degree>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s20"></sid></labtest>
+<finding v = "elevated" idref = "p849"><degree v = "low degree" idref = "p847"></degree>
+<parsemode v = "mode3"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s20"></sid></finding>
+<med v = "vitamin e" idref = "p851"><parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s20"></sid></med>
+<problem v = "3-methylglutaconic aciduria" code = "HP:0003535_3-Methylglutaconic aciduria" idref = "p872"><bodymeas v = "urine organic acid levels result" idref = "p858"></bodymeas>
+<certainty v = "no" idref = "p866"></certainty>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s20"></sid><code v = "HP:0003535_3-Methylglutaconic aciduria" idref = "p872"></code>
+</problem>
+<finding v = "acid" idref = "p886"><certainty v = "high certainty" idref = "p890"></certainty>
+<parsemode v = "mode5"></parsemode>
+<quantity v = "3" idref = "p882"></quantity>
+<region v = "level" idref = "p888"></region>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s20"></sid></finding>
+<labtest v = "creatinine" idref = "p900"><parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s20"></sid></labtest>
+<procedure v = "electromyogram" idref = "p924"><parsemode v = "mode2"></parsemode>
+<proceduredescr v = "electromyography" idref = "p921"></proceduredescr>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s21"></sid></procedure>
+<problem v = "changes" idref = "p933"><bodyloc v = "neurogenic" idref = "p931"></bodyloc>
+<certainty v = "high certainty" idref = "p927"></certainty>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s21"></sid><status v = "chronic" idref = "p929"></status>
+</problem>
+<procedure v = "magnetic resonance imaging" idref = "p940"><bodyloc v = "brain" idref = "p938"></bodyloc>
+<certainty v = "high certainty" idref = "p950"></certainty>
+<parsemode v = "mode4"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s21"></sid></procedure>
+<finding v = "demo"><age v = "20 year" idref = "p956"></age>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s21"></sid></finding>
+<normalfinding v = "normal" idref = "p966"><certainty v = "high certainty" idref = "p964"></certainty>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s21"></sid></normalfinding>
+<problem v = "atrophy" code = "HP:0004334_Dermal atrophy" idref = "p990"><bodyloc v = "optic nerve" idref = "p982"><region v = "bilateral" idref = "p980"></region>
+</bodyloc>
+<certainty v = "moderate certainty" idref = "p976"></certainty>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s21"></sid><code v = "HP:0004334_Dermal atrophy" idref = "p990"></code>
+<code v = "HP:0000648_Optic atrophy" idref = "p982 p990"></code>
+</problem>
+<problem v = "atrophy" code = "HP:0004334_Dermal atrophy" idref = "p990"><bodyloc v = "optic chiasm" idref = "p988"></bodyloc>
+<certainty v = "moderate certainty" idref = "p976"></certainty>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s21"></sid><code v = "HP:0004334_Dermal atrophy" idref = "p990"></code>
+</problem>
+<problem v = "involved" idref = "p1004"><bodyloc v = "heart" idref = "p1002"></bodyloc>
+<certainty v = "no" idref = "p998"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s22"></sid></problem>
+<procedure v = "electrocardiogram" idref = "p1016"><certainty v = "high certainty" idref = "p1008"></certainty>
+<locative v = "by" idref = "p1010"></locative>
+<parsemode v = "mode1"></parsemode>
+<proceduredescr v = "normal" idref = "p1014"></proceduredescr>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s22"></sid></procedure>
+<procedure v = "echocardiogram" idref = "p1020"><certainty v = "high certainty" idref = "p1018"></certainty>
+<locative v = "by" idref = "p1010"></locative>
+<parsemode v = "mode1"></parsemode>
+<proceduredescr v = "normal" idref = "p1014"></proceduredescr>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s22"></sid></procedure>
+<problem v = "paresthesia" code = "HP:0003401_Paresthesia" idref = "p1031"><bodyloc v = "extremity" idref = "p1041"></bodyloc>
+<certainty v = "high certainty" idref = "p1027"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s23"></sid><status v = "constant" idref = "p1029"></status>
+<code v = "HP:0003401_Paresthesia" idref = "p1031"></code>
+</problem>
+<problem v = "numbness" code = "HP:0003474_Sensory impairment" idref = "p1035"><bodyloc v = "extremity" idref = "p1041"></bodyloc>
+<certainty v = "high certainty" idref = "p1033"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s23"></sid><code v = "HP:0003474_Sensory impairment" idref = "p1035"></code>
+</problem>
+<bodyfunc v = "light touch" idref = "p1047"><change v = "decrease" idref = "p1045"></change>
+<parsemode v = "mode4"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s24"></sid></bodyfunc>
+<bodyfunc v = "sensation" idref = "p1051"><bodyloc v = "hand" idref = "p1057"></bodyloc>
+<certainty v = "high certainty" idref = "p1063"></certainty>
+<change v = "decrease" idref = "p1045"></change>
+<parsemode v = "mode4"></parsemode>
+<problemdescr v = "difficulty" code = "HP:0009046_Difficulty running" idref = "p1067"><code v = "HP:0009046_Difficulty running" idref = "p1067"></code>
+</problemdescr>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s24"></sid><code v = "HP:0003474_Sensory impairment" idref = "p1045 p1051"></code>
+</bodyfunc>
+<bodyfunc v = "sensation" idref = "p1051"><bodyloc v = "foot" idref = "p1061"></bodyloc>
+<certainty v = "high certainty" idref = "p1063"></certainty>
+<change v = "decrease" idref = "p1045"></change>
+<parsemode v = "mode4"></parsemode>
+<problemdescr v = "difficulty" code = "HP:0009046_Difficulty running" idref = "p1067"><code v = "HP:0009046_Difficulty running" idref = "p1067"></code>
+</problemdescr>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s24"></sid><code v = "HP:0003474_Sensory impairment" idref = "p1045 p1051"></code>
+</bodyfunc>
+<problem v = "weak" idref = "p1091"><bodyloc v = "muscle" idref = "p1089"><region v = "proximal" idref = "p1087"></region>
+</bodyloc>
+<certainty v = "high certainty" idref = "p1085"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s25"></sid><code v = "HP:0001324_Muscle weakness" idref = "p1089 p1091"></code>
+<code v = "HP:0003701_Proximal muscle weakness" idref = "p1087 p1089 p1091"></code>
+</problem>
+<bodyfunc v = "position sense" idref = "p1101"><bodyloc v = "joint" idref = "p1113"><bodyloc v = "interphalangeal" idref = "p1111"><region v = "distal" idref = "p1109"></region>
+</bodyloc>
+<bodyloc v = "hand" idref = "p1121"><region v = "both" idref = "p1117"></region>
+</bodyloc>
+</bodyloc>
+<certainty v = "high certainty" idref = "p1097"></certainty>
+<change v = "loss" idref = "p1099"></change>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s26"></sid></bodyfunc>
+<bodyfunc v = "position sense" idref = "p1101"><bodyloc v = "joint" idref = "p1113"><bodyloc v = "interphalangeal" idref = "p1111"><region v = "distal" idref = "p1109"></region>
+</bodyloc>
+<bodyloc v = "foot" idref = "p1125"></bodyloc>
+</bodyloc>
+<certainty v = "high certainty" idref = "p1123"></certainty>
+<change v = "loss" idref = "p1099"></change>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s26"></sid></bodyfunc>
+<bodyfunc v = "reflex" idref = "p1133"><bodyloc v = "deep tendon" idref = "p1129"></bodyloc>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s27"></sid></bodyfunc>
+<problem v = "absent" idref = "p1137"><bodyloc v = "ankle" idref = "p1143"></bodyloc>
+<certainty v = "high certainty" idref = "p1135"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s27"></sid></problem>
+<problem v = "absent" idref = "p1137"><bodyloc v = "knee" idref = "p1146"></bodyloc>
+<certainty v = "high certainty" idref = "p1149"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s27"></sid></problem>
+<problem v = "absent" idref = "p1137"><bodyloc v = "wrist" idref = "p1151"></bodyloc>
+<certainty v = "high certainty" idref = "p1149"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s27"></sid></problem>
+<problem v = "hyperesthesia" code = "HP:0100963_Hyperesthesia" idref = "p1159"><bodyloc v = "foot" idref = "p1182"><region v = "sole" idref = "p1176"></region>
+</bodyloc>
+<bodyloc v = "leg" idref = "p1167"><region v = "lower" idref = "p1165"></region>
+</bodyloc>
+<certainty v = "high certainty" idref = "p1157"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s28"></sid><code v = "HP:0100963_Hyperesthesia" idref = "p1159"></code>
+</problem>
+<problem v = "atrophy" code = "HP:0004334_Dermal atrophy" idref = "p1192"><certainty v = "high certainty" idref = "p1190"></certainty>
+<parsemode v = "mode3"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s29"></sid><code v = "HP:0004334_Dermal atrophy" idref = "p1192"></code>
+</problem>
+<problem v = "fat pad" idref = "p1198"><bodyloc v = "face" idref = "p1206"></bodyloc>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s29"></sid></problem>
+<problem v = "pain" code = "HP:0012531_Pain!HP:0100607_Dysmenorrhea" idref = "p1216"><bodyloc v = "hand" idref = "p1222"></bodyloc>
+<certainty v = "high certainty" idref = "p1212"></certainty>
+<parsemode v = "mode2"></parsemode>
+<problemdescr v = "neuropathy" code = "HP:0009830_Peripheral neuropathy" idref = "p1214"><code v = "HP:0009830_Peripheral neuropathy" idref = "p1214"></code>
+</problemdescr>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s29"></sid><code v = "HP:0100607_Dysmenorrhea" idref = "p1216"></code>
+<code v = "HP:0012531_Pain" idref = "p1216"></code>
+</problem>
+<problem v = "pain" code = "HP:0012531_Pain!HP:0100607_Dysmenorrhea" idref = "p1216"><bodyloc v = "foot" idref = "p1226"></bodyloc>
+<certainty v = "high certainty" idref = "p1224"></certainty>
+<parsemode v = "mode2"></parsemode>
+<problemdescr v = "neuropathy" code = "HP:0009830_Peripheral neuropathy" idref = "p1214"><code v = "HP:0009830_Peripheral neuropathy" idref = "p1214"></code>
+</problemdescr>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s29"></sid><code v = "HP:0100607_Dysmenorrhea" idref = "p1216"></code>
+<code v = "HP:0012531_Pain" idref = "p1216"></code>
+</problem>
+<bodyfunc v = "gait" idref = "p1238"><certainty v = "high certainty" idref = "p1232"></certainty>
+<parsemode v = "mode1"></parsemode>
+<problemdescr v = "ataxia" code = "HP:0001251_Ataxia!HP:0010867_Dyssynergia" idref = "p1236"><code v = "HP:0010867_Dyssynergia" idref = "p1236"></code>
+<code v = "HP:0001251_Ataxia" idref = "p1236"></code>
+</problemdescr>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s30"></sid><code v = "HP:0002066_Gait ataxia" idref = "p1236 p1238"></code>
+</bodyfunc>
+<bodyfunc v = "hearing" idref = "p1246"><bodyloc v = "ear" idref = "p1254"><region v = "left" idref = "p1252"></region>
+</bodyloc>
+<certainty v = "high certainty" idref = "p1242"></certainty>
+<change v = "decrease" idref = "p1244"></change>
+<measure v = "512 mhz" idref = "p1257"></measure>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s30"></sid><code v = "HP:0000365_Hearing impairment" idref = "p1244 p1246"></code>
+</bodyfunc>
+<procedure v = "phenotype determination" idref = "p1286"><certainty v = "no" idref = "p1276"></certainty>
+<parsemode v = "mode4"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s31"></sid></procedure>
+
+</structured>
+<tt><sent id = "s1">The <phr id = "p4">female</phr> Caucasian <undef>proband</undef> <phr id = "p10">presented with</phr> <phr id = "p14">nystagmus</phr> <phr id = "p16">at</phr> <phr id = "p18">birth</phr> and <phr id = "p22">bilateral</phr> <phr id = "p24">cataracts</phr> that <phr id = "p28">were</phr> <phr id = "p30">first</phr> <phr id = "p32">detected</phr> at <phr id = "p36">3 mo</phr> of age.</sent><sent id = "s2"> Her lenses were removed during her first year, but there was <phr id = "p69">no</phr> apparent <phr id = "p73">improvement in</phr> her best-<phr id = "p81">corrected</phr> <phr id = "p83">visual acuity</phr>.</sent><sent id = "s3"> At age <phr id = "p93">6 yr</phr>, she was <phr id = "p102">found to have</phr> <phr id = "p108">optic nerve</phr> <phr id = "p112">atrophy</phr> <phr id = "p114">after</phr> a <phr id = "p118">visual evoked potentials</phr> (<undef>VEP</undef>) <phr id = "p128">test</phr>.</sent><sent id = "s4"> The <undef>VEP</undef> <phr id = "p136">test</phr> <undef>concluded</undef> that the patient had <phr id = "p148">highly</phr> <phr id = "p150">abnormal</phr> <phr id = "p152">visual evoked potentials</phr> in <phr id = "p160">both eyes</phr>.</sent><sent id = "s5"> She was <phr id = "p170">otherwise</phr> <phr id = "p172">healthy</phr> <phr id = "p174">until</phr> <phr id = "p176">12 yr</phr> of age when she <phr id = "p188">started</phr> <phr id = "p190">experiencing</phr> <phr id = "p192">ataxia</phr>, which caused her to <undef>stumble</undef>.</sent><sent id = "s6"> The <phr id = "p209">ataxia</phr> <phr id = "p211">initially</phr> <phr id = "p213">manifested</phr> only in her <phr id = "p221">lower limbs</phr>, and then her upper limbs began to show <phr id = "p242">signs of</phr> <phr id = "p246">ataxia</phr> <phr id = "p248">at</phr> <undef>~</undef><phr id = "p251">15 yr</phr> of age.</sent><sent id = "s7"> She <phr id = "p263">started</phr> <phr id = "p265">experiencing</phr> <phr id = "p267">falls</phr> at age <phr id = "p273">17</phr> and was <undef>formally</undef> <phr id = "p281">diagnosed with</phr> <phr id = "p285">peripheral neuropathy</phr> <phr id = "p289">after</phr> <phr id = "p291">nerve conduction studies</phr> <phr id = "p297">were performed</phr> at age <phr id = "p305">21</phr>.</sent><sent id = "s8"> The <phr id = "p311">nerve conduction studies</phr> <phr id = "p317">showed</phr> a <phr id = "p321">complete</phr> <phr id = "p323">absence of</phr> <phr id = "p327">all</phr> <phr id = "p329">sensory</phr> <phr id = "p331">responses</phr> in the <phr id = "p337">upper</phr> <phr id = "p339">and</phr> <phr id = "p341">lower extremities</phr>.</sent><sent id = "s9"> <phr id = "p347">Motor nerve</phr> <phr id = "p351">conduction</phr> <phr id = "p353">studies</phr> in the <phr id = "p359">upper limbs</phr> <phr id = "p363">were</phr> <phr id = "p365">normal</phr>, <phr id = "p368">and</phr> there were <phr id = "p374">no</phr> <phr id = "p376">findings</phr> that <phr id = "p380">suggested</phr> <phr id = "p382">demyelination</phr>.</sent><sent id = "s10">
+
+The patient recalled a relatively rapid <phr id = "p399">progression of</phr> her <phr id = "p405">neuropathy</phr> <phr id = "p407">between</phr> <phr id = "p409">17</phr> and <phr id = "p413">27 yr</phr> of age, though the <phr id = "p426">progression</phr> <phr id = "p428">has</phr> <phr id = "p430">slowed</phr> <phr id = "p432">for</phr> the last <phr id = "p438">few years</phr>.</sent><sent id = "s11"> Her <phr id = "p446">visual acuity</phr> <phr id = "p450">has</phr> <phr id = "p452">worsened</phr> <phr id = "p454">since</phr> <phr id = "p456">birth</phr>, <phr id = "p459">decreasing</phr> from 20/200 as a young child to 20/450 <phr id = "p481">currently</phr>.</sent><sent id = "s12"> She also <phr id = "p489">has</phr> <phr id = "p491">symptoms of</phr> <phr id = "p495">palinopsia</phr> <phr id = "p497">with</phr> <undef>smearing</undef> <phr id = "p501">effect</phr>, <phr id = "p504">double</phr> <phr id = "p506">vision</phr>, and <phr id = "p511">visual</phr> <undef>snow</undef>.</sent><sent id = "s13"> By age <phr id = "p521">23 yr</phr>, she had <phr id = "p530">cutis marmorata</phr> in her <phr id = "p538">extremities</phr>, a <undef>novel</undef> <phr id = "p545">phenotype</phr> for <phr id = "p549">OPA3</phr> <undef>mutations</undef>, <phr id = "p554">suggesting</phr> some degree of <phr id = "p562">vasomotor instability</phr>.</sent><sent id = "s14"> She also <phr id = "p572">has</phr> <phr id = "p574">cerebellar</phr> <phr id = "p576">findings</phr> <phr id = "p578">including</phr> a <phr id = "p582">marked</phr> <phr id = "p584">intention tremor</phr>, <phr id = "p589">dysdiadochokinesia</phr>, and <phr id = "p594">mild</phr> <phr id = "p596">dysarthria</phr>, suggesting there is a cerebellar <undef>component</undef> to her <phr id = "p615">ataxia</phr>.</sent><sent id = "s15"> She has an <undef>extrapyramidal</undef> <undef>component</undef> <phr id = "p629">with</phr> some <phr id = "p633">chorea</phr><phr id = "p634">,</phr> <phr id = "p636">postural</phr> <phr id = "p638">tremor</phr>, <phr id = "p641">and</phr> <phr id = "p643">vocal</phr> <phr id = "p645">tremor</phr>.</sent><sent id = "s16"> She <phr id = "p651">has</phr> <phr id = "p653">normal</phr> <phr id = "p655">facial</phr> <phr id = "p657">features</phr> with the exception of <undef>upslanting</undef> palpebral fissures and <phr id = "p675">is of</phr> <phr id = "p679">normal</phr> <phr id = "p681">intelligence</phr>.</sent><sent id = "s17"> The <phr id = "p687">possibility of</phr> a <phr id = "p693">secondary</phr> <phr id = "p695">lipodystrophy</phr> <phr id = "p697">was considered</phr> because she also has <phr id = "p709">generalized</phr> <phr id = "p711">wasting</phr> of <phr id = "p715">muscle</phr> <phr id = "p717">and</phr> <phr id = "p719">subcutaneous</phr> <phr id = "p721">fat</phr>, especially in the hands and forearms.</sent><sent id = "s18"> She <phr id = "p740">has</phr> <phr id = "p742">diminished</phr> <phr id = "p744">light touch</phr> <phr id = "p748">sensation</phr> from <phr id = "p752">knees</phr> <phr id = "p754">distally</phr> <phr id = "p756">and</phr> <phr id = "p758">distal</phr> to the <phr id = "p764">metacarpophalangeal joints</phr> of the <phr id = "p772">hands</phr>.</sent><sent id = "s19"> <phr id = "p776">Blood</phr> <undef>biomarkers</undef> <phr id = "p780">have been</phr> <phr id = "p784">unremarkable</phr> over the last <phr id = "p792">10 yr</phr>, <phr id = "p797">except for</phr> <phr id = "p801">occasional</phr> <phr id = "p803">mild</phr> <phr id = "p805">neutropenia</phr> and <phr id = "p809">mild</phr> <phr id = "p811">elevations</phr> of <phr id = "p815">creatine kinase</phr> and <phr id = "p821">total</phr> <phr id = "p823">cholesterol</phr> (<undef>Table</undef> <phr id = "p828">1</phr>).</sent><sent id = "s20"> <phr id = "p833">Urinalysis</phr> <phr id = "p835">has</phr> <phr id = "p837">shown</phr> <phr id = "p839">moderate</phr> <phr id = "p841">ketones</phr> and a <phr id = "p847">slightly</phr> <phr id = "p849">elevated</phr> <phr id = "p851">vitamin E</phr>, though <phr id = "p858">urine organic acids</phr> <phr id = "p864">found</phr> <phr id = "p866">no evidence of</phr> <phr id = "p872">3-methylglutaconic aciduria</phr> as her <phr id = "p882">3</phr>-<undef>methylglutaconic</undef> <phr id = "p886">acid</phr> <phr id = "p888">level</phr> <phr id = "p890">was</phr> 9 mmol/mol of <phr id = "p900">creatinine</phr> (<undef>reference</undef> range &lt;20 mmol/mol Cr).</sent><sent id = "s21"> Her <phr id = "p921">electromyography</phr> (<phr id = "p924">EMG</phr>) <phr id = "p927">showed</phr> <phr id = "p929">chronic</phr> <phr id = "p931">neurogenic</phr> <phr id = "p933">changes</phr>, and <phr id = "p938">brain</phr> <phr id = "p940">magnetic resonance</phr> <undef>imagings</undef> (<undef>MRIs</undef>) <phr id = "p950">performed</phr> at <undef>ages</undef> <phr id = "p956">20 and 23 yr</phr> <phr id = "p964">were</phr> <phr id = "p966">normal</phr> with the <undef>exceptions</undef> of <phr id = "p976">signs of</phr> <phr id = "p980">bilateral</phr> <phr id = "p982">optic nerve</phr> <phr id = "p986">and</phr> <phr id = "p988">chiasmal</phr> <phr id = "p990">atrophy</phr>.</sent><sent id = "s22"> There is <phr id = "p998">no</phr> apparent <phr id = "p1002">cardiac</phr> <phr id = "p1004">involvement</phr> <phr id = "p1006">as</phr> <phr id = "p1008">demonstrated</phr> <phr id = "p1010">by</phr> a <phr id = "p1014">normal</phr> <phr id = "p1016">electrocardiogram</phr> <phr id = "p1018">and</phr> <phr id = "p1020">echocardiogram</phr>.</sent><sent id = "s23">
+
+She <phr id = "p1027">experiences</phr> <phr id = "p1029">constant</phr> <phr id = "p1031">paresthesia</phr> <phr id = "p1033">and</phr> <phr id = "p1035">numbness</phr> in her <phr id = "p1041">extremities</phr>.</sent><sent id = "s24"> <phr id = "p1045">Diminished</phr> <phr id = "p1047">light touch</phr> <phr id = "p1051">sensation</phr> in her <phr id = "p1057">hands</phr> <phr id = "p1059">and</phr> <phr id = "p1061">feet</phr> <phr id = "p1063">make</phr> it <phr id = "p1067">difficult</phr> for her to <undef>distinguish</undef> <undef>textures</undef>.</sent><sent id = "s25"> She also <phr id = "p1085">experiences</phr> <phr id = "p1087">proximal</phr> <phr id = "p1089">muscle</phr> <phr id = "p1091">weakness</phr>.</sent><sent id = "s26"> She <phr id = "p1097">has</phr> <phr id = "p1099">lost</phr> <phr id = "p1101">position sense</phr> in her <phr id = "p1109">distal</phr> <phr id = "p1111">interphalangeal</phr> <phr id = "p1113">joints</phr> in <phr id = "p1117">both</phr> her <phr id = "p1121">hands</phr> <phr id = "p1123">and</phr> <phr id = "p1125">feet</phr>.</sent><sent id = "s27"> <phr id = "p1129">Deep tendon</phr> <phr id = "p1133">reflexes</phr> <phr id = "p1135">are</phr> <phr id = "p1137">absent</phr> in her <phr id = "p1143">ankles</phr>, <phr id = "p1146">knees</phr>, <phr id = "p1149">and</phr> <phr id = "p1151">wrists</phr>.</sent><sent id = "s28"> She <phr id = "p1157">has</phr> <phr id = "p1159">hyperesthesia</phr> of her <phr id = "p1165">lower</phr> <phr id = "p1167">legs</phr>, particularly of the <phr id = "p1176">soles</phr> of her <phr id = "p1182">feet</phr>.</sent><sent id = "s29"> She also <phr id = "p1190">has</phr> <phr id = "p1192">atrophy</phr> of the <phr id = "p1198">fat pads</phr> of her <phr id = "p1206">face</phr> and has <phr id = "p1212">experienced</phr> <phr id = "p1214">neuropathic</phr> <phr id = "p1216">pain</phr> in her <phr id = "p1222">hands</phr> <phr id = "p1224">and</phr> <phr id = "p1226">feet</phr>.</sent><sent id = "s30"> She <phr id = "p1232">has</phr> an <phr id = "p1236">ataxic</phr> <phr id = "p1238">gait</phr> <phr id = "p1240">and</phr> <phr id = "p1242">has</phr> <phr id = "p1244">reduced</phr> <phr id = "p1246">hearing</phr> in her <phr id = "p1252">left</phr> <phr id = "p1254">ear</phr> (<phr id = "p1257">512 mHz</phr>).</sent><sent id = "s31"> Her parents and two siblings showed <phr id = "p1276">no</phr> signs of <undef>sharing</undef> her <phr id = "p1286">phenotype</phr>.</sent></tt></section>
+
+</medlee>

@@ -1,0 +1,229 @@
+<medlee>
+<section c = "report unknown section item"><structured form = "xml">
+<problem v = "pregnant" idref = "p29"><certainty v = "high certainty" idref = "p23"></certainty>
+<parsemode v = "mode2"></parsemode>
+<proceduredescr v = "normal" idref = "p27"></proceduredescr>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s1"></sid><status v = "history" idref = "p31"></status>
+</problem>
+<finding v = "large" idref = "p44"><bodyloc v = "fontanel" idref = "p46"></bodyloc>
+<certainty v = "high certainty" idref = "p50"></certainty>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s2"></sid><timeper v = "birth" idref = "p40"></timeper>
+<code v = "HP:0000239_Large fontanelles" idref = "p44 p46"></code>
+</finding>
+<normalfinding v = "healthy" idref = "p62"><certainty v = "high certainty" idref = "p60"></certainty>
+<family v = "sibling" idref = "p58"></family>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s3"></sid></normalfinding>
+<status v = "no family history" idref = "p66"><sectname v = "report unknown section item"></sectname>
+<parsemode v = "mode4"></parsemode>
+<sid idref = "s3"></sid></status>
+<bodyfunc v = "developmental" idref = "p94"><parsemode v = "mode4"></parsemode>
+<quantity v = "all" idref = "p92"></quantity>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s4"></sid></bodyfunc>
+<problem v = "formication" idref = "p101"><parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s4"></sid></problem>
+<problem v = "epilepsy" code = "HP:0001250_Seizures!HP:0002197_Generalized seizures" idref = "p112"><parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s4"></sid><status v = "episode" idref = "p114"></status>
+<code v = "HP:0002197_Generalized seizures" idref = "p112"></code>
+<code v = "HP:0001250_Seizures" idref = "p112"></code>
+</problem>
+<status v = "episode" idref = "p138"><sectname v = "report unknown section item"></sectname>
+<parsemode v = "mode2"></parsemode>
+<sid idref = "s5"></sid></status>
+<finding v = "loss" idref = "p143"><parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s5"></sid></finding>
+<bodyfunc v = "speech" idref = "p147"><parsemode v = "mode5"></parsemode>
+<quantity v = "all" idref = "p145"></quantity>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s5"></sid></bodyfunc>
+<bodyfunc v = "behavior" idref = "p156"><certainty v = "high certainty" idref = "p152"></certainty>
+<parsemode v = "mode2"></parsemode>
+<problemdescr v = "autistic" code = "HP:0000717_Autism" idref = "p154"><code v = "HP:0000717_Autism" idref = "p154"></code>
+</problemdescr>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s5"></sid><status v = "start" idref = "p150"></status>
+<code v = "HP:0000729_Autistic behavior" idref = "p154 p156"></code>
+</bodyfunc>
+<status v = "start" idref = "p163"><sectname v = "report unknown section item"></sectname>
+<parsemode v = "mode5"></parsemode>
+<sid idref = "s5"></sid></status>
+<problem v = "grand mal seizure" code = "HP:0002069_Generalized tonic-clonic seizures" idref = "p171"><parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s5"></sid><status v = "frequent" idref = "p169"></status>
+<code v = "HP:0002069_Generalized tonic-clonic seizures" idref = "p171"></code>
+</problem>
+<finding v = "tonic" idref = "p186"><parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s6"></sid></finding>
+<problem v = "atony" idref = "p189"><parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s6"></sid></problem>
+<problem v = "clonus" code = "HP:0002169_Clonus" idref = "p194"><degree v = "low degree" idref = "p192"></degree>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s6"></sid><code v = "HP:0002169_Clonus" idref = "p194"></code>
+</problem>
+<problem v = "myoclonus" code = "HP:0001336_Myoclonus" idref = "p202"><parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s6"></sid><code v = "HP:0001336_Myoclonus" idref = "p202"></code>
+</problem>
+<problem v = "gelastic seizures" code = "HP:0010821_Gelastic seizures" idref = "p206"><certainty v = "high certainty" idref = "p212"></certainty>
+<parsemode v = "mode4"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s6"></sid><code v = "HP:0010821_Gelastic seizures" idref = "p206"></code>
+</problem>
+<bodyfunc v = "developmental" idref = "p225"><parsemode v = "mode4"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s7"></sid></bodyfunc>
+<bodyfunc v = "respond to" idref = "p239"><parsemode v = "mode4"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s7"></sid></bodyfunc>
+<bodyfunc v = "feeding" idref = "p248"><parsemode v = "mode4"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s7"></sid></bodyfunc>
+<bodyfunc v = "self care" idref = "p258"><certainty v = "high certainty" idref = "p264"></certainty>
+<change v = "loss" idref = "p266"><reltime v = "by" idref = "p268"><numunit v = "4 year" idref = "p270"></numunit>
+</reltime>
+</change>
+<parsemode v = "mode4"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s7"></sid></bodyfunc>
+<problem v = "conductive hearing loss" code = "HP:0000405_Conductive hearing impairment" idref = "p284"><certainty v = "no" idref = "p280"></certainty>
+<degree v = "high degree" idref = "p282"></degree>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s8"></sid><code v = "HP:0000405_Conductive hearing impairment" idref = "p284"></code>
+<code v = "HP:0012717_Severe conductive hearing impairment" idref = "p282 p284"></code>
+</problem>
+<problem v = "abnormal" code = "HP:0000130_Abnormality of the uterus" idref = "p293"><bodyloc v = "heart" idref = "p291"></bodyloc>
+<certainty v = "no" idref = "p280"></certainty>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s8"></sid><code v = "HP:0000130_Abnormality of the uterus" idref = "p293"></code>
+<code v = "HP:0002564_" idref = "p291 p293"></code>
+</problem>
+<problem v = "delayed" idref = "p297"><certainty v = "no" idref = "p280"></certainty>
+<parsemode v = "mode4"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s8"></sid></problem>
+<bodymeas v = "bone age" idref = "p299"><certainty v = "high certainty" idref = "p305"></certainty>
+<parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s8"></sid></bodymeas>
+<bodyfunc v = "neurologic" idref = "p359"><parsemode v = "mode2"></parsemode>
+<quantity v = "several" idref = "p357"></quantity>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s11"></sid><timeper v = "presentation" idref = "p353"></timeper>
+</bodyfunc>
+<problem v = "abnormal" code = "HP:0000130_Abnormality of the uterus" idref = "p365"><bodyloc v = "craniofacial" idref = "p363"></bodyloc>
+<certainty v = "high certainty" idref = "p361"></certainty>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s11"></sid><code v = "HP:0000130_Abnormality of the uterus" idref = "p365"></code>
+</problem>
+<problem v = "epilepsy" code = "HP:0001250_Seizures!HP:0002197_Generalized seizures" idref = "p369"><certainty v = "high certainty" idref = "p367"></certainty>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s11"></sid><code v = "HP:0002197_Generalized seizures" idref = "p369"></code>
+<code v = "HP:0001250_Seizures" idref = "p369"></code>
+</problem>
+<problem v = "ventriculomegaly" code = "HP:0002119_Ventriculomegaly" idref = "p372"><parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s11"></sid><code v = "HP:0002119_Ventriculomegaly" idref = "p372"></code>
+</problem>
+<problem v = "macrocephalia" code = "HP:0001355_Megalencephaly!HP:0040194_Increased head circumference" idref = "p377"><degree v = "moderate degree" idref = "p375"></degree>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s11"></sid><code v = "HP:0040194_Increased head circumference" idref = "p377"></code>
+<code v = "HP:0001355_Megalencephaly" idref = "p377"></code>
+<code v = "HP:0004482_Relative macrocephaly" idref = "p375 p377"></code>
+</problem>
+<finding v = "prominent" idref = "p380"><bodyloc v = "forehead" idref = "p382"><bodyloc v = "hairline" idref = "p387"><position v = "low" idref = "p385"></position>
+</bodyloc>
+</bodyloc>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s11"></sid><code v = "HP:0011220_Prominent forehead" idref = "p380 p382"></code>
+</finding>
+<finding v = "thick" idref = "p390"><bodyloc v = "eyebrow" idref = "p392"></bodyloc>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s11"></sid><code v = "HP:0000574_Thick eyebrow" idref = "p390 p392"></code>
+</finding>
+<finding v = "wide" idref = "p395"><bodyloc v = "eye" idref = "p399"></bodyloc>
+<parsemode v = "mode4"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s11"></sid></finding>
+<problem v = "macrodontia" code = "HP:0001572_Macrodontia" idref = "p402"><bodyloc v = "incisor" idref = "p410"><region v = "central" idref = "p408"><region v = "upper" idref = "p406"></region>
+</region>
+</bodyloc>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s11"></sid><code v = "HP:0011081_Incisor macrodontia" idref = "p402 p410"></code>
+<code v = "HP:0001572_Macrodontia" idref = "p402"></code>
+</problem>
+<problem v = "abnormal" code = "HP:0000130_Abnormality of the uterus" idref = "p427"><bodyloc v = "hand" idref = "p421"></bodyloc>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s12"></sid><code v = "HP:0000130_Abnormality of the uterus" idref = "p427"></code>
+<code v = "HP:0001155_Abnormality of the hand" idref = "p421 p427"></code>
+</problem>
+<problem v = "abnormal" code = "HP:0000130_Abnormality of the uterus" idref = "p427"><bodyloc v = "foot" idref = "p425"></bodyloc>
+<certainty v = "high certainty" idref = "p423"></certainty>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s12"></sid><code v = "HP:0000130_Abnormality of the uterus" idref = "p427"></code>
+<code v = "HP:0001760_Abnormality of the foot" idref = "p425 p427"></code>
+</problem>
+<problem v = "clinodactyly" code = "HP:0040019_Finger clinodactyly" idref = "p431"><bodyloc v = "digit" idref = "p439"><bodyloc v = "palmar crease" idref = "p448"><position v = "transverse" idref = "p446"><region v = "bilateral" idref = "p442"></region>
+<quantity v = "1" idref = "p444"></quantity>
+</position>
+</bodyloc>
+<region v = "5" idref = "p437"></region>
+</bodyloc>
+<certainty v = "high certainty" idref = "p429"></certainty>
+<parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s12"></sid><code v = "HP:0004209_Clinodactyly of the 5th finger" idref = "p431 p437 p439 p442"></code>
+<code v = "HP:0004209_Clinodactyly of the 5th finger" idref = "p431 p437 p439"></code>
+<code v = "HP:0040019_Finger clinodactyly" idref = "p431"></code>
+</problem>
+<problem v = "brachydactyly" code = "HP:0001156_Brachydactyly syndrome" idref = "p453"><parsemode v = "mode2"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s12"></sid><code v = "HP:0001156_Brachydactyly syndrome" idref = "p453"></code>
+</problem>
+<finding v = "flattened" idref = "p457"><bodyloc v = "foot" idref = "p459"></bodyloc>
+<parsemode v = "mode4"></parsemode>
+<quantity v = "2" idref = "p464"></quantity>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s12"></sid><code v = "HP:0001763_Pes planus" idref = "p457 p459"></code>
+</finding>
+<labtest v = "folate" idref = "p484"><bodyloc v = "cerebrum" idref = "p482"></bodyloc>
+<certainty v = "high certainty" idref = "p478"></certainty>
+<parsemode v = "mode3"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s13"></sid></labtest>
+<problem v = "deficiency" code = "HP:0004395_Malnutrition!HP:0010906_Hyperhistidinemia" idref = "p486"><parsemode v = "mode5"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s13"></sid><code v = "HP:0010906_Hyperhistidinemia" idref = "p486"></code>
+<code v = "HP:0004395_Malnutrition" idref = "p486"></code>
+</problem>
+<labtest v = "folate" idref = "p498"><certainty v = "high certainty" idref = "p494"></certainty>
+<parsemode v = "mode4"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s13"></sid></labtest>
+
+</structured>
+<tt><sent id = "s1">The <undef>proband</undef> was <undef>born</undef> to a non-<undef>consanguineous</undef> <undef>couple</undef>, who <phr id = "p23">had</phr> an <phr id = "p27">unremarkable</phr> <phr id = "p29">pregnancy</phr> <phr id = "p31">history</phr>;</sent><sent id = "s2"> however, at <phr id = "p40">birth</phr> a <phr id = "p44">large</phr> <phr id = "p46">fontanel</phr> was <phr id = "p50">reported</phr>.</sent><sent id = "s3"> Parents and <phr id = "p58">siblings</phr> <phr id = "p60">were</phr> <phr id = "p62">healthy</phr> and <phr id = "p66">no significant family history</phr> was reported (<undef>Figure</undef> 1).</sent><sent id = "s4"> The <undef>proband</undef> met <phr id = "p92">all</phr> <phr id = "p94">developmental</phr> <undef>milestones</undef>, except <phr id = "p101">crawling</phr>, up to his first <phr id = "p112">epileptic</phr> <phr id = "p114">episode</phr>, which occurred at three years of age.</sent><sent id = "s5">  After this <phr id = "p138">episode</phr>, he <phr id = "p143">lost</phr> <phr id = "p145">all</phr> <phr id = "p147">speech</phr>, <phr id = "p150">began</phr> <phr id = "p152">exhibiting</phr> <phr id = "p154">autistic</phr> <phr id = "p156">behavior</phr>, and also <phr id = "p163">started</phr> to have <phr id = "p169">frequent</phr> <phr id = "p171">generalized tonic-clonic seizures</phr>.</sent><sent id = "s6"> Over time, <phr id = "p186">tonic</phr>, <phr id = "p189">atonic</phr>, <phr id = "p192">mild</phr> <phr id = "p194">clonic</phr>, complex partial, <phr id = "p202">myoclonic</phr> and <phr id = "p206">gelastic seizures</phr> were <phr id = "p212">reported</phr> in the <undef>proband</undef>.</sent><sent id = "s7">  Other <phr id = "p225">developmental</phr> <undef>skills</undef>, including <undef>throwing</undef> a <undef>ball</undef>, <phr id = "p239">responding to</phr> his <undef>name</undef>, <phr id = "p248">feeding</phr> <undef>himself</undef> with <undef>utensils</undef> and <phr id = "p258">self-care</phr> <undef>skills</undef> <phr id = "p264">were</phr> <phr id = "p266">lost</phr> <phr id = "p268">by</phr> <phr id = "p270">4-years</phr> of age.</sent><sent id = "s8"> <phr id = "p280">No</phr> <phr id = "p282">significant</phr> <phr id = "p284">conductive hearing loss</phr>, <phr id = "p291">heart</phr> <phr id = "p293">abnormalities</phr> or <phr id = "p297">delayed</phr> <phr id = "p299">bone age</phr> were <phr id = "p305">found</phr> in the <undef>proband</undef> at that age.</sent><sent id = "s9">
+
+The <undef>proband</undef> was evaluated (by <undef>G.J.L</undef>.</sent><sent id = "s10">) at eleven years of age.</sent><sent id = "s11">  He <phr id = "p353">presented with</phr> <phr id = "p357">several</phr> <phr id = "p359">neurological</phr> <phr id = "p361">and</phr> <phr id = "p363">craniofacial</phr> <phr id = "p365">abnormalities</phr> <phr id = "p367">including</phr> <phr id = "p369">epilepsy</phr>, <phr id = "p372">ventriculomegaly</phr>, <phr id = "p375">relative</phr> <phr id = "p377">macrocephaly</phr>, <phr id = "p380">prominent</phr> <phr id = "p382">forehead</phr>, <phr id = "p385">low</phr> <phr id = "p387">hairline</phr>, <phr id = "p390">thick</phr> <phr id = "p392">eyebrows</phr>, <phr id = "p395">wide</phr>-<undef>set</undef> <phr id = "p399">eyes</phr>, <phr id = "p402">macrodontia</phr> of <phr id = "p406">upper</phr> <phr id = "p408">central</phr> <phr id = "p410">incisors</phr>, and full lips.</sent><sent id = "s12"> <phr id = "p421">Hand</phr> <phr id = "p423">and</phr> <phr id = "p425">foot</phr> <phr id = "p427">abnormalities</phr> <phr id = "p429">included</phr> <phr id = "p431">clinodactyly</phr> of the <phr id = "p437">fifth</phr> <phr id = "p439">digit</phr>, <phr id = "p442">bilateral</phr> <phr id = "p444">single</phr> <phr id = "p446">transverse</phr> <phr id = "p448">palmar creases</phr>, <phr id = "p453">brachydactyly</phr> and <phr id = "p457">flat</phr> <phr id = "p459">feet</phr> (<undef>Figure</undef> <phr id = "p464">2</phr>).</sent><sent id = "s13">  He also <phr id = "p474">had</phr> a <phr id = "p478">diagnosis of</phr> <phr id = "p482">cerebral</phr> <phr id = "p484">folate</phr> <phr id = "p486">deficiency</phr> <phr id = "p488">due to</phr> the <phr id = "p494">presence of</phr> <phr id = "p498">folate</phr> <undef>receptor</undef> <undef>autoantibodies</undef>.</sent></tt></section>
+
+</medlee>
