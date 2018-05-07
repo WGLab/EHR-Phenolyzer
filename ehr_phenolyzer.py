@@ -2,6 +2,7 @@ import argparse,os,subprocess
 import glob,sys,distutils.spawn
 import pymetamap as pt
 import pymedlee as pd
+import pyncbo_annotator as pa
 
 
 ###parse the arguments
@@ -48,6 +49,8 @@ print(run_command(phenolyzer_outdir))
 
 ####run metamap
 if args['nlp']=='metamap':
+	print("NLP used: MetaMap")
+	print("start to run MetaMap")
 	###handle no-ASCII characters in the medical notes, otherwise will lead to system error in metamap
 	def removeNonAscii(s):
 	    return "".join(i for i in s if ord(i)<128)
@@ -62,11 +65,22 @@ if args['nlp']=='metamap':
 	input_tmp.write(input_str_noascii)
 	input_tmp.close()
 	pt.run_metamap(input_tmp_name,args['prefix'],args['obo'],args['outdir'])
+	print("MetaMap HPO name extraction completed")
 
 ####run medlee
 if args["nlp"]=='medlee':
+	print("NLP used: MedLEE")
+	print("start to process MedLEE output")
 	pd.parse_medlee_output(args["input"],args['prefix'],args['outdir'])
 	print("MedLEE xml format output processed")
+
+####run NCBO Annotator (API Key Required)
+if args["nlp"]=='NCBOannotator':
+	print("NLP used: NCBO Annotator")
+	print("start to run NCBO annotator")
+	pa.run_ncbo_annotator(notes_file=args["input"],prefix=args['prefix'],obo_file=args["obo"],outdir=args['outdir'])
+	print("completion of extration of HPO names by NCBO annotator")
+
 
 hpo_file=args['prefix']+".hpo.txt"
 #start the server
