@@ -19,7 +19,7 @@ EHR-Phenolyzer is a python pipeline to automatically translate raw clinical note
 3. following the MetaMap installation instruction (https://metamap.nlm.nih.gov/Installation.shtml)
 4. export MetaMap executable binary to your linux system PATH (export PATH="/path/to/public_mm/bin:$PATH") 
 
-### Get NCBO API Key (needed only if choose NCBO annotator as NLP)
+### Get NCBO API Key (needed only if choosing NCBO annotator as NLP)
 1. register a new BioPortal Account (https://bioportal.bioontology.org/accounts/new)
 2. login to your account (https://bioportal.bioontology.org/login)
 3. at the user panel, click your user name at the upper left corner of the banner,and then choose "Account Settings"
