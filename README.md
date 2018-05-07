@@ -24,6 +24,11 @@ EHR-Phenolyzer is a python pipeline to automatically translate raw clinical note
 2. install dependencies: Bioperl, Bio::OntologyIO and Graph::Directed 
 3. export phenolyzer executable file to your linux system PATH ( export PATH="/path/to/phenolyzer:$PATH")
 
+### Install EHR-Phenolyzer
+1. git clone git@github.com:WGLab/EHR-Phenolyzer.git
+2. cd EHR-Phenolyzer
+3. python ehr_phenolyzer.py --help
+
 ## TEST 
 
 `python ehr_phenolyzer.py -i example/Kleyner_ANKRD11.txt -p kleyner > ehr_phenolyzer.log `
