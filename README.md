@@ -5,18 +5,25 @@ EHR-Phenolyzer is a python pipeline to automatically translate raw clinical note
 ## PREREQUISITES
 
 1. Python 2.7 or Python 3.6
-2. metamap16.BINARY.Linux (2016)
-3. phenolyzer
-4. linux environment
+2. metamap16.BINARY.Linux (2016) (needed only if choosing MetaMap as NLP processor)
+3. NCBO Annotator API KEY (needed only if choosing NCBO annotator as NLP processor)
+4. phenolyzer
+5. linux environment
 
 ## INSTALLATION
 
-### Install MetaMap
+### Install MetaMap (needed only if choosing MetaMap as NLP)
 
 1. register at UMLS Terminology Services (https://uts.nlm.nih.gov//license.html)
 2. download "MetaMap 2016V2 Linux Version" from https://metamap.nlm.nih.gov/MainDownload.shtml
 3. following the MetaMap installation instruction (https://metamap.nlm.nih.gov/Installation.shtml)
 4. export MetaMap executable binary to your linux system PATH (export PATH="/path/to/public_mm/bin:$PATH") 
+
+### Get NCBO API Key (needed only if choose NCBO annotator as NLP)
+1. register a new BioPortal Account (https://bioportal.bioontology.org/accounts/new)
+2. login to your account (https://bioportal.bioontology.org/login)
+3. at the user panel, click your user name at the upper left corner of the banner,and then choose "Account Settings"
+4. create a file named "ncbo.apikey.txt" under EHR-Phenozer root folder, and then copy your API Key to the first line of this file
 
 ### Install Phenolyzer
 
@@ -31,7 +38,7 @@ EHR-Phenolyzer is a python pipeline to automatically translate raw clinical note
 
 ## TEST 
 
-`python ehr_phenolyzer.py -i example/Kleyner_ANKRD11.txt -p kleyner > ehr_phenolyzer.log `
+`python ehr_phenolyzer.py -i example/Kleyner_ANKRD11.txt -p kleyner -n "metamap" > ehr_phenolyzer.log `
 
 ## USAGE 
 
