@@ -31,8 +31,8 @@ EHR-Phenolyzer is a python pipeline to automatically translate raw clinical note
 ## USAGE 
 
 ```
-usage: ehr_phenolyzer.py [-h] -i INPUT [-p PREFIX] [-d OUTDIR] [-m OMIM]
-                         [-x OBO]
+usage: ehr_phenolyzer.py [-h] -i INPUT [-p PREFIX] [-n NLP] [-d OUTDIR]
+                         [-m OMIM] [-x OBO]
 
 Get ranked gene ids based on EHR medical notes
 
@@ -42,10 +42,11 @@ optional arguments:
                         medical note file in txt format
   -p PREFIX, --prefix PREFIX
                         the prefix for the output file
+  -n NLP, --nlp NLP     types of NLP (metamap (default),medlee, NCBOannotator)
   -d OUTDIR, --outdir OUTDIR
                         the path to the output folder
   -m OMIM, --omim OMIM  path to the OMIM txt file
-  -x OBO, --obo OBO     path to the HPO obo txt file
+  -x OBO, --obo OBO     path to HPO obo file
 
 One step from EHR records to ranked gene list.Before running, please install
 Phenolyzer, Metamap first
