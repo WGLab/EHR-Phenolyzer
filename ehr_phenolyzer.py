@@ -1,6 +1,7 @@
 import argparse,os,subprocess
 import glob,sys,distutils.spawn
 import pymetamap as pt
+import pymedlee as pd
 
 
 ###parse the arguments
@@ -10,6 +11,8 @@ parser.add_argument('-i','--input', dest='input',required=True,
                     help='medical note file in txt format')
 parser.add_argument("-p","--prefix",dest='prefix',default="test",
                     help='the prefix for the output file')
+parser.add_argument("-n","--nlp",dest='nlp',default="metamap",
+                    help='types of NLP (metamap (default),medlee, NCBOannotator)')
 parser.add_argument("-d","--outdir",dest='outdir',default="out",
                     help='the path to the output folder')
 parser.add_argument("-m","--omim",dest='omim',default=os.path.join(os.path.dirname(__file__), './db/OMIM_HGNCGenes.txt'),
@@ -40,22 +43,31 @@ def run_command(command_line):
 phenolyzer_outdir="mkdir -p {0}".format(args["outdir"])
 print(run_command(phenolyzer_outdir))
 
-###handle no-ASCII characters in the medical notes, otherwise will lead to system error in metamap
-def removeNonAscii(s):
-    return "".join(i for i in s if ord(i)<128)
 
-input_tmp_name=args["outdir"]+"/"+args["input"].split("/")[-1]+".tmp"
-input_tmp=open(input_tmp_name,"w")
-input_str=""
-for line in open(args["input"]):
-    input_str=input_str+line
+###run NLP
 
-input_str_noascii=removeNonAscii(input_str)
-input_tmp.write(input_str_noascii)
-input_tmp.close()
+####run metamap
+if args['nlp']=='metamap':
+	###handle no-ASCII characters in the medical notes, otherwise will lead to system error in metamap
+	def removeNonAscii(s):
+	    return "".join(i for i in s if ord(i)<128)
 
-###run metamap
-pt.run_metamap(input_tmp_name,args['prefix'],args['obo'],args['outdir'])
+	input_tmp_name=args["outdir"]+"/"+args["input"].split("/")[-1]+".tmp"
+	input_tmp=open(input_tmp_name,"w")
+	input_str=""
+	for line in open(args["input"]):
+	    input_str=input_str+line
+
+	input_str_noascii=removeNonAscii(input_str)
+	input_tmp.write(input_str_noascii)
+	input_tmp.close()
+	pt.run_metamap(input_tmp_name,args['prefix'],args['obo'],args['outdir'])
+
+####run medlee
+if args["nlp"]=='medlee':
+	pd.parse_medlee_output(args["input"],args['prefix'],args['outdir'])
+	print("MedLEE xml format output processed")
+
 hpo_file=args['prefix']+".hpo.txt"
 #start the server
 #print(run_command("skrmedpostctl start"))
@@ -128,6 +140,6 @@ for file in glob.glob(args["outdir"]+"/"+args["prefix"]+".tmp*"):
     if os.path.isfile(file):
         os.remove(file)
 
-if os.path.isfile(input_tmp_name):
+if args['nlp']=='metamap' and os.path.isfile(input_tmp_name):
     os.remove(input_tmp_name)
 print("completed!")
