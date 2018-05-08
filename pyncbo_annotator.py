@@ -1,21 +1,21 @@
 import os,json,urllib2
 from hpo_obo import Obo
 
-#read API key
-i=0
-api_key=""
-#put your BioPortal API Key in ncbo.apikey.txt
-#First register at  https://bioportal.bioontology.org/accounts/new 
-#After registration succeed, get the API Key here: https://bioportal.bioontology.org/account
-for line in open("ncbo.apikey.txt"):
-	i+=1
-	if i==1:
-		api_key=line.rstrip()
 
 
 def run_ncbo_annotator(notes_file="example/Bourne_OPA3.txt",prefix="ncbo",obo_file="db/hp.obo",outdir="./out/"):
-	if not os.path.exists(outdir):
-		os.makedirs(outdir)
+	#read API key
+	i=0
+	api_key=""
+	#put your BioPortal API Key in ncbo.apikey.txt
+	#First register at  https://bioportal.bioontology.org/accounts/new 
+	#After registration succeed, get the API Key here: https://bioportal.bioontology.org/account
+	for line in open("ncbo.apikey.txt"):
+		i+=1
+		if i==1:
+			api_key=line.rstrip()
+		if not os.path.exists(outdir):
+			os.makedirs(outdir)
 	
 	#get notes_text
 	notes_text=""
