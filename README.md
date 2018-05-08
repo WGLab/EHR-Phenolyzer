@@ -51,7 +51,8 @@ Get ranked gene ids based on EHR medical notes
 optional arguments:
   -h, --help            show this help message and exit
   -i INPUT, --input INPUT
-                        medical note file in txt format
+                        medical note file in txt format (in case of using
+                        medlee, the input is medlee xml format)
   -p PREFIX, --prefix PREFIX
                         the prefix for the output file
   -n NLP, --nlp NLP     type of NLP (metamap (default),medlee, NCBOannotator)
