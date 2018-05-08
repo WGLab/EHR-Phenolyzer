@@ -1,4 +1,4 @@
-import os,json,urllib2
+import os,json,urllib2,sys
 from hpo_obo import Obo
 
 
@@ -12,11 +12,11 @@ def run_ncbo_annotator(notes_file="example/Bourne_OPA3.txt",prefix="ncbo",obo_fi
 	#After registration succeed, get the API Key here: https://bioportal.bioontology.org/account
 	api_key_file=os.path.join(os.path.dirname(__file__), "ncbo.apikey.txt")
 	if not os.path.exists(api_key_file):
-		print("lib/ncbo.apikey.txt is missing, please add your BioPortal API Key to lib/ncbo.apikey.txt.")
+		print("Error:lib/ncbo.apikey.txt is missing, please add your BioPortal API Key to lib/ncbo.apikey.txt.")
 		print("First register at https://bioportal.bioontology.org/accounts/new")
 		print("Then create a file named ncbo.apikey.txt under lib/ folder")
 		print("Finally copy your API KEY from https://bioportal.bioontology.org/account to ncbo.apikey.txt you just created")
-		os._exit()
+		sys.exit()
 	for line in open(api_key_file):
 		i+=1
 		if i==1:
