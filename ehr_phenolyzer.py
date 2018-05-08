@@ -28,12 +28,14 @@ args = parser.parse_args()
 args=vars(args) # convert to dictionary,and accessed by: args['input']
 
 ###check third-party tools availabilities
-if not (distutils.spawn.find_executable("skrmedpostctl")):
-    print("Error: Metmap server skrmedpostctl not found")
-    sys.exit()
-if not (distutils.spawn.find_executable("metamap")):
-    print("Error: Metamap not found, please install Metamap")
-    sys.exit()
+
+if args['nlp']=='metamap':
+	if not (distutils.spawn.find_executable("skrmedpostctl")):
+	    print("Error: Metmap server skrmedpostctl not found")
+	    sys.exit()
+	if not (distutils.spawn.find_executable("metamap")):
+	    print("Error: Metamap not found, please install Metamap")
+	    sys.exit()
 if not (distutils.spawn.find_executable("disease_annotation.pl")):
     print("Error: disease_annotation.pl not found, please install Phenolyzer")
     sys.exit()
