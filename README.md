@@ -40,6 +40,8 @@ EHR-Phenolyzer is a python pipeline to automatically translate raw clinical note
 
 `python ehr_phenolyzer.py -i example/Kleyner_ANKRD11.txt -p kleyner -n "metamap" > ehr_phenolyzer.log `
 
+For more testing examples, please check and run the bash scripts under test/
+
 ## USAGE 
 
 ```
