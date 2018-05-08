@@ -9,7 +9,7 @@ import pyncbo_annotator as pa
 parser = argparse.ArgumentParser(description='Get ranked gene ids based on EHR medical notes',
                                  epilog="One step from EHR records to ranked gene list.Before running, please install Phenolyzer, Metamap first")
 parser.add_argument('-i','--input', dest='input',required=True,
-                    help='medical note file in txt format')
+                    help='medical note file in txt format (in case of using medlee, the input is medlee xml format)')
 parser.add_argument("-p","--prefix",dest='prefix',default="test",
                     help='the prefix for the output file')
 parser.add_argument("-n","--nlp",dest='nlp',default="metamap",
