@@ -1,6 +1,12 @@
+def load_src(name, fpath):
+    import os, imp
+    p = fpath if os.path.isabs(fpath) \
+        else os.path.join(os.path.dirname(__file__), fpath)
+    return imp.load_source(name, p)
+load_src("hpo_obo","../lib/hpo_obo.py")
 import hpo_obo as ho
 import unittest
-obj=ho.Obo("db/hp.obo")
+obj=ho.Obo("../db/hp.obo")
 
 class TestStringMethods(unittest.TestCase):
     def test_synonym2name(self):
