@@ -1,8 +1,8 @@
 import argparse,os,subprocess
 import glob,sys,distutils.spawn
-import pymetamap as pt
-import pymedlee as pd
-import pyncbo_annotator as pa
+from lib import pymetamap as pt
+from lib import pymedlee as pd
+from lib import pyncbo_annotator as pa
 
 
 ###parse the arguments
