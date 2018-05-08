@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import argparse,os,subprocess
 import glob,sys,distutils.spawn
 from lib import pymetamap as pt
