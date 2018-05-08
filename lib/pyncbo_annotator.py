@@ -10,7 +10,7 @@ def run_ncbo_annotator(notes_file="example/Bourne_OPA3.txt",prefix="ncbo",obo_fi
 	#put your BioPortal API Key in ncbo.apikey.txt
 	#First register at  https://bioportal.bioontology.org/accounts/new 
 	#After registration succeed, get the API Key here: https://bioportal.bioontology.org/account
-	for line in open("ncbo.apikey.txt"):
+	for line in open(os.path.join(os.path.dirname(__file__), "ncbo.apikey.txt")):
 		i+=1
 		if i==1:
 			api_key=line.rstrip()
