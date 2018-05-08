@@ -23,7 +23,7 @@ EHR-Phenolyzer is a python pipeline to automatically translate raw clinical note
 1. register a new BioPortal Account (https://bioportal.bioontology.org/accounts/new)
 2. login to your account (https://bioportal.bioontology.org/login)
 3. at the user panel, click your user name at the upper left corner of the banner,and then choose "Account Settings"
-4. create a file named "ncbo.apikey.txt" under EHR-Phenozer root folder, and then copy your API Key to the first line of this file
+4. create a file named "ncbo.apikey.txt" under EHR-Phenozer lib/ folder ("see example ncbo.apikey.txt.example"), and then copy your API Key to the first line of this file
 
 ### Install Phenolyzer
 
