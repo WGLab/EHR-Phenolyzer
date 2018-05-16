@@ -70,9 +70,10 @@ Phenolyzer, Metamap first
 ## About Input Data
 
 ### OMIM data
-The source file was downloaded from https://data.omim.org/downloads/bCOFIRBTTr22jEy5tH0FSw/morbidmap.txt. The gene names were further extracted from this source file, and the aliases gene names and offical gene names were grouped into one line separated by ",". This file can be found in the folder "db/" 
+The source file is available from OMIM as the `morbidmap.txt` file after you get access to OMIM. The gene names were further extracted from this source file, and the aliases gene names and offical gene names were grouped into one line separated by ",". This file can be found in the folder "db/" 
 
 ### HPO obo format data
 The source file was download from http://purl.obolibrary.org/obo/hp.obo. This file can be also found in the folder 'db/'
+
 ### medical notes file
 Medical notes file should be in plain text format, and examples notes files can be found in folder "example/"
