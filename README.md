@@ -14,7 +14,7 @@ EHR-Phenolyzer is a python pipeline to automatically translate raw clinical note
 
 ### Install MetaMap (needed only if choosing MetaMap as NLP)
 
-1. register at UMLS Terminology Services (https://uts.nlm.nih.gov//license.html)
+1. register at UMLS Terminology Services and obtain appropriate license (https://uts.nlm.nih.gov//license.html)
 2. download "MetaMap 2016V2 Linux Version" from https://metamap.nlm.nih.gov/MainDownload.shtml
 3. following the MetaMap installation instruction (https://metamap.nlm.nih.gov/Installation.shtml)
 4. export MetaMap executable binary to your linux system PATH (export PATH="/path/to/public_mm/bin:$PATH") 
@@ -24,6 +24,10 @@ EHR-Phenolyzer is a python pipeline to automatically translate raw clinical note
 2. login to your account (https://bioportal.bioontology.org/login)
 3. at the user panel, click your user name at the upper left corner of the banner,and then choose "Account Settings"
 4. create a file named "ncbo.apikey.txt" under EHR-Phenozer lib/ folder ("see example ncbo.apikey.txt.example"), and then copy your API Key to the first line of this file
+
+### Get MedLEE XML output (needed only if choosing MedLEE as NLP)
+1. obtain an appropriate license to use MedLEE
+2. analyze clinical notes and generate XML output
 
 ### Install Phenolyzer
 
@@ -76,7 +80,7 @@ The source file is available from OMIM as the `morbidmap.txt` file after you get
 The source file was download from http://purl.obolibrary.org/obo/hp.obo. This file can be also found in the folder 'db/'
 
 ### medical notes file
-Medical notes file should be in plain text format, and examples notes files can be found in folder "example/"
+Medical notes file should be in plain text format, and examples notes files can be found in folder "example/". However, if you use MedLEE as the NLP engine, the input file should be XML file processed by MedLEE.
 
 ## License Agreement
 By using the software, you acknowledge that you agree to the terms below:
