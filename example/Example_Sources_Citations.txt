@@ -1,0 +1,19 @@
+#Bourne_OPA3.txt
+Bourne SC, Townsend KN, Shyr C, et al. Optic atrophy, cataracts, lipodystrophy/lipoatrophy, and peripheral neuropathy caused by a de novo OPA3 mutation. Cold Spring Harbor Molecular Case Studies. 2017;3(1):a001156. doi:10.1101/mcs.a001156.
+
+#Kleyner_ANKRD11.txt
+Kleyner R, Malcolmson J, Tegay D, et al. KBG syndrome involving a single-nucleotide duplication in ANKRD11. Cold Spring Harbor Molecular Case Studies. 2016;2(6):a001131. doi:10.1101/mcs.a001131.
+
+
+#Malcolmson_SCN8A.txt
+Malcolmson J, Kleyner R, Tegay D, et al. SCN8A mutation in a child presenting with seizures and developmental delays. Cold Spring Harbor Molecular Case Studies. 2016;2(6):a001073. doi:10.1101/mcs.a001073.
+
+
+#Polfus_SCNN1B.txt
+Polfus LM, Boerwinkle E, Gibbs RA, et al. Whole-exome sequencing reveals an inherited R566X mutation of the epithelial sodium channel β-subunit in a case of early-onset phenotype of Liddle syndrome. Cold Spring Harbor Molecular Case Studies. 2016;2(6):a001255. doi:10.1101/mcs.a001255.
+
+
+#Shi_NAGLU_1.txt, Shi_NAGLU_2.txt
+Shi L, Li B, Huang Y, et al. “Genotype-first” approaches on a curious case of idiopathic progressive cognitive decline. BMC Medical Genomics. 2014;7:66. doi:10.1186/s12920-014-0066-9.
+
+
