@@ -77,3 +77,13 @@ The source file was download from http://purl.obolibrary.org/obo/hp.obo. This fi
 
 ### medical notes file
 Medical notes file should be in plain text format, and examples notes files can be found in folder "example/"
+
+## License Agreement
+By using the software, you acknowledge that you agree to the terms below:
+
+For academic and non-profit use, you are free to fork, download, modify, distribute and use the software without restriction.
+
+For commercial use, you are required to contact [Columbia Technology Ventures](http://techventures.columbia.edu/) to discuss licensing options.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
