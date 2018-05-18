@@ -17,7 +17,7 @@ parser.add_argument("-n","--nlp",dest='nlp',default="metamap",
                     help='type of NLP (metamap (default),medlee, NCBOannotator)')
 parser.add_argument("-d","--outdir",dest='outdir',default="out",
                     help='the path to the output folder')
-parser.add_argument("-k","--keeptmp",dest='keeptmp',action="store_false",
+parser.add_argument("-k","--keeptmp",dest='keeptmp',action="store_true",
                     help='keep temporary files')
 parser.add_argument("-m","--omim",dest='omim',default=os.path.join(os.path.dirname(__file__), './db/OMIM_HGNCGenes.txt'),
                     help='path to the OMIM txt file')
