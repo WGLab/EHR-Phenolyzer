@@ -17,6 +17,8 @@ parser.add_argument("-n","--nlp",dest='nlp',default="metamap",
                     help='type of NLP (metamap (default),medlee, NCBOannotator)')
 parser.add_argument("-d","--outdir",dest='outdir',default="out",
                     help='the path to the output folder')
+parser.add_argument("-k","--keeptmp",dest='keeptmp',action="store_false",
+                    help='keep temporary files')
 parser.add_argument("-m","--omim",dest='omim',default=os.path.join(os.path.dirname(__file__), './db/OMIM_HGNCGenes.txt'),
                     help='path to the OMIM txt file')
 parser.add_argument("-x","--obo",dest='obo',default=os.path.join(os.path.dirname(__file__),'./db/hp.obo'),
@@ -153,10 +155,12 @@ for gene in omim_genes:
 outfile.close()
 
 ###clean the work space
-for file in glob.glob(args["outdir"]+"/"+args["prefix"]+".tmp*"):
-    if os.path.isfile(file):
-        os.remove(file)
+if not args["keeptmp"]:
+	print("Notes: temporary output files were removed. Keeping them by adding on -k")
+	for file in glob.glob(args["outdir"]+"/"+args["prefix"]+".tmp*"):
+	    if os.path.isfile(file):
+		os.remove(file)
 
-if args['nlp']=='metamap' and os.path.isfile(input_tmp_name):
-    os.remove(input_tmp_name)
+	if args['nlp']=='metamap' and os.path.isfile(input_tmp_name):
+	    os.remove(input_tmp_name)
 print("completed!")
