@@ -8,7 +8,7 @@ from lib import pyncbo_annotator as pa
 
 ###parse the arguments
 parser = argparse.ArgumentParser(description='Get ranked gene ids based on EHR medical notes',
-                                 epilog="One step from EHR records to ranked gene list.Before running, please install Phenolyzer, Metamap first")
+                                 epilog="One step from EHR records to ranked gene list.Before running, please install Phenolyzer, and get the NLP tools ready.")
 parser.add_argument('-i','--input', dest='input',required=True,
                     help='medical note file in txt format (in case of using medlee, the input is medlee xml format)')
 parser.add_argument("-p","--prefix",dest='prefix',default="test",
