@@ -4,6 +4,7 @@ import glob,sys,distutils.spawn
 from lib import pymetamap as pt
 from lib import pymedlee as pd
 from lib import pyncbo_annotator as pa
+from lib import hpo_obo as hpo
 
 
 ###parse the arguments
@@ -87,7 +88,31 @@ if args["nlp"]=='NCBOannotator':
 	print("completion of extration of HPO names by NCBO annotator")
 
 
-hpo_file=args['prefix']+".hpo.txt"
+#hpo_file=args['prefix']+".hpo.txt"
+
+###add HPO ID to the HPO term file: temporary fix for HPO ID problems###
+hpo_obj=hpo.Obo(args["obo"])
+hpo_graph=hpo_obj.graph()
+name2id_dict=hpo_obj.name2id()
+hpo_file=args["outdir"]+"/"+args["prefix"]+".HPO.txt"
+hpo_file_tmp1=args["outdir"]+"/"+args["prefix"]+".hpo.txt" #output from NLP processing
+hpo_file_tmp2=args["outdir"]+"/"+args["prefix"]+".hpo.tmp.txt" #only with HPO names, which is used as Phenolyzer input
+hpo_f=open(hpo_file,"w")
+hpo_f2=open(hpo_file_tmp2,"w")
+for line in open(hpo_file_tmp1):
+    hpo_name=line.rstrip()
+    hpo_id=name2id_dict[hpo_name]
+    sub_ontology=hpo_obj.subontology(hpo_graph,hpo_id)
+    if not sub_ontology[0]=="HP:0000118": #only consider HPO ids that belong to Phenotypic abnormality
+        print("Notice: "+hpo_id+" "+hpo_name+" was ignored, because it doens't belong to Phenotypic abnormality HPO terms")
+        continue
+    hpo_f.write(hpo_id+"\t"+hpo_name+"\n")
+    hpo_f2.write(hpo_name+"\n")
+hpo_f.close()
+hpo_f2.close()
+
+
+
 #start the server
 #print(run_command("skrmedpostctl start"))
 #metamap_command_line="metamap -I -p -J -K -8 --conj cgab,genf,lbpr,lbtr,patf,dsyn,fndg -R 'HPO' {0} {2}/{1}.tmp.metamap.o".format(input_tmp_name,args["prefix"],args["outdir"])
@@ -105,7 +130,7 @@ hpo_file=args['prefix']+".hpo.txt"
 ###run phenolyzer
 
 print("run phenolyzer:")
-phenolyzer_command="disease_annotation.pl -f -p -ph -logistic -addon DB_DISGENET_GENE_DISEASE_SCORE,DB_GAD_GENE_DISEASE_SCORE -addon_weight 0.25 {1}/{0} -out {1}/{2}.tmp".format(hpo_file,args["outdir"],args['prefix'])
+phenolyzer_command="disease_annotation.pl -f -p -ph -logistic -addon DB_DISGENET_GENE_DISEASE_SCORE,DB_GAD_GENE_DISEASE_SCORE -addon_weight 0.25 {0} -out {1}/{2}.tmp".format(hpo_file_tmp2,args["outdir"],args['prefix'])
 print(phenolyzer_command)
 print(run_command(phenolyzer_command))
 
@@ -154,7 +179,12 @@ for gene in omim_genes:
     outfile.write(str(i)+"\t"+gene+"\n")
 outfile.close()
 
+
 ###clean the work space
+
+os.remove(hpo_file_tmp1)
+os.remove(hpo_file_tmp2)
+
 if not args["keeptmp"]:
 	print("Notes: temporary output files were removed. Keeping them by adding on -k")
 	for file in glob.glob(args["outdir"]+"/"+args["prefix"]+".tmp*"):
