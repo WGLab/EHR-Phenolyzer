@@ -98,3 +98,58 @@ class Obo:
             else:
                 n2id_dict[name]=id
         return n2id_dict
+
+    def graph(self):
+        '''
+        get a graph presentation of the nodes
+        '''
+        graph_dict={}
+        with open(self.obo_file) as f:
+            id=""
+            name=''
+            for line in f:
+                line=line.rstrip()
+                if re.search("^id:",line):
+                    id=re.sub("^id: ","",line)
+                    continue
+                if re.search("^is_a:",line):
+                    p_id=re.sub("is_a: ","",line).split()[0] #get the parent id
+                    if p_id in graph_dict:
+                        graph_dict[p_id].append(id)
+                    else:
+                        graph_dict[p_id]=[id]
+
+        return graph_dict
+
+    def find_path(self,graph, start, end, path=[]):
+        '''
+        graph: return of graph function
+        start: the ancestor hpo id
+        end: the child hpo id
+        path: the path from ancestor to the child (return just one of them if multiple ones exist)
+        '''
+        path = path + [start]
+        if start == end:
+            return path
+        if not graph.has_key(start):
+            return None
+        for node in graph[start]:
+            if node not in path:
+                newpath = self.find_path(graph, node, end, path)
+                if newpath: return newpath
+        return None 
+
+    def subontology(self,graph,hpo_id):
+        '''
+        graph: return of graph function
+        hpo_id: hpo id
+        return: the subontology of the given hpo_id [hpo_id, hpo_name]
+        '''
+        path=self.find_path(graph,"HP:0000001",hpo_id)
+        if not path:
+            print("warning:"+hpo_id+" subontology not found")
+            return False
+        sub_id=path[1]
+        id2names=self.id2name()
+        sub_name=id2names[sub_id]
+        return [sub_id,sub_name]
