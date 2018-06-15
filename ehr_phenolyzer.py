@@ -69,7 +69,7 @@ if args['nlp']=='metamap':
 
 	input_str_noascii=removeNonAscii(input_str)
 	input_tmp.write(input_str_noascii)
-    input_tmp.write("\n") #In case there is no newline. metamap require a newline at the end of file
+	input_tmp.write("\n") #In case there is no newline. metamap require a newline at the end of file
 	input_tmp.close()
 	pt.run_metamap(input_tmp_name,args['prefix'],args['obo'],args['outdir'])
 	print("MetaMap HPO name extraction completed")
