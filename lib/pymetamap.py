@@ -55,10 +55,10 @@ def run_metamap(notes_file,prefix,obo_file,outdir="./"):
     #run metamap
     print(run_command(commands))
     #stop the server
-    try:
-        print(run_command("skrmedpostctl stop"))
-    except:
-        print("warning: stop skrmedpostctl failed")
+    #try:
+    #    print(run_command("skrmedpostctl stop"))
+    #except:
+    #    print("warning: stop skrmedpostctl failed")
     #extract umls ids
     o_filename=outdir+"/"+prefix+".metamap.o"
     op=OutputParser(o_filename)
