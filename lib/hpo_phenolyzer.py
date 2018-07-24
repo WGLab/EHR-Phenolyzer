@@ -65,7 +65,7 @@ else:
 ###run phenolyzer
 
 print("run phenolyzer:")
-phenolyzer_command="disease_annotation.pl -f -p -ph -logistic -addon DB_DISGENET_GENE_DISEASE_SCORE,DB_GAD_GENE_DISEASE_SCORE -addon_weight 0.25 {0} -out {1}/{2}.tmp".format(hpo_file,args["outdir"],args['prefix'])
+phenolyzer_command="disease_annotation.pl -f -p -ph -logistic -addon DB_DISGENET_GENE_DISEASE_SCORE,DB_GAD_GENE_DISEASE_SCORE -addon_weight 0.25 {0} -out {1}/{2}.tmp".format(os.path.abspath(hpo_file),args["outdir"],args['prefix'])
 print(phenolyzer_command)
 print(run_command(phenolyzer_command))
 
