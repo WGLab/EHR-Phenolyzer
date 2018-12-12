@@ -13,6 +13,7 @@ EHR-Phenolyzer is a python pipeline to automatically translate raw clinical note
 ## INSTALLATION
 ### Install python modules
 $pip install requests
+$pip install lxml
 
 
 ### Install MetaMap (needed only if choosing MetaMap as NLP)
