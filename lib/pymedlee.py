@@ -45,10 +45,10 @@ def parse_medlee_output(filename,prefix,outdir="./"):
                                                 code_list.append ( item )
             else:
                 pass
-	#output all non-negated HPO names
-	hpo_names=[]
-	for id_name in set(code_list):
-		(hpo_id,hpo_name)=id_name.split("_")
-		hpo_names.append(hpo_name)
-	outfile.write("\n".join(hpo_names))
-	outfile.close()
+        #output all non-negated HPO names
+        hpo_names=[]
+        for id_name in set(code_list):
+            (hpo_id,hpo_name)=id_name.split("_")
+            hpo_names.append(hpo_name)
+        outfile.write("\n".join(hpo_names))
+        outfile.close()
