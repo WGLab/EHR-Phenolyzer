@@ -53,7 +53,7 @@ class Obo:
                         print(id+" duplidated")
                         return False
                     else:
-                        u2n_dict[id]=name 
+                        u2n_dict[id]=name
         return u2n_dict
 
     def synonym2name(self):
@@ -81,7 +81,7 @@ class Obo:
                         print(id+" duplidated")
                         return False
                     else:
-                        u2n_dict[sname]=name 
+                        u2n_dict[sname]=name
         return u2n_dict
 
     def name2id(self):
@@ -137,7 +137,7 @@ class Obo:
             if node not in path:
                 newpath = self.find_path(graph, node, end, path)
                 if newpath: return newpath
-        return None 
+        return None
 
     def subontology(self,graph,hpo_id):
         '''
