@@ -10,19 +10,19 @@ def run_command(command_line):
 #Remove abnormal characters in the input file, otherwise will lead to system error for metamap
 #TODO: consider more cases
 def format_input(notes_file,outdir):
-        def removeNonAscii(s):
-            return "".join(i for i in s if ord(i)<128)
+    def removeNonAscii(s):
+        return "".join(i for i in s if ord(i)<128)
 
-        input_tmp_name=outdir+"/"+filename.split("/")[-1]+".tmp"
-        input_tmp=open(input_tmp_name,"w")
-        input_str=""
-        for line in open(filename):
-            input_str=input_str+line
+    input_tmp_name=outdir+"/"+filename.split("/")[-1]+".tmp"
+    input_tmp=open(input_tmp_name,"w")
+    input_str=""
+    for line in open(filename):
+        input_str=input_str+line
 
-        input_str_noascii=removeNonAscii(input_str)
-        input_tmp.write(input_str_noascii)
-        input_tmp.close()
-        return 0
+    input_str_noascii=removeNonAscii(input_str)
+    input_tmp.write(input_str_noascii)
+    input_tmp.close()
+    return 0
 
 
 def get_hpo_names(umlsid_file,outfile_name,obo_file,outdir="./"):
@@ -69,4 +69,3 @@ def run_metamap(notes_file,prefix,obo_file,outdir="./"):
     outfile.close()
     hpo_file=prefix+".hpo.txt"
     get_hpo_names(umlsid_file,hpo_file,obo_file,outdir)
-
