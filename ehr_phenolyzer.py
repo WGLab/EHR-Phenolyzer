@@ -33,12 +33,12 @@ args=vars(args) # convert to dictionary,and accessed by: args['input']
 ###check third-party tools availabilities
 
 if args['nlp']=='metamap':
-	if not (distutils.spawn.find_executable("skrmedpostctl")):
-	    print("Error: Metmap server skrmedpostctl not found")
-	    sys.exit()
-	if not (distutils.spawn.find_executable("metamap")):
-	    print("Error: Metamap not found, please install Metamap")
-	    sys.exit()
+    if not (distutils.spawn.find_executable("skrmedpostctl")):
+        print("Error: Metmap server skrmedpostctl not found")
+        sys.exit()
+    if not (distutils.spawn.find_executable("metamap")):
+        print("Error: Metamap not found, please install Metamap")
+        sys.exit()
 if not (distutils.spawn.find_executable("disease_annotation.pl")):
     print("Error: disease_annotation.pl not found, please install Phenolyzer")
     sys.exit()
@@ -55,38 +55,38 @@ print(run_command(phenolyzer_outdir))
 
 ####run metamap
 if args['nlp']=='metamap':
-	print("NLP used: MetaMap")
-	print("start to run MetaMap")
-	###handle no-ASCII characters in the medical notes, otherwise will lead to system error in metamap
-	def removeNonAscii(s):
-	    return "".join(i for i in s if ord(i)<128)
+    print("NLP used: MetaMap")
+    print("start to run MetaMap")
+    ###handle no-ASCII characters in the medical notes, otherwise will lead to system error in metamap
+    def removeNonAscii(s):
+        return "".join(i for i in s if ord(i)<128)
 
-	input_tmp_name=args["outdir"]+"/"+args["input"].split("/")[-1]+".tmp"
-	input_tmp=open(input_tmp_name,"w")
-	input_str=""
-	for line in open(args["input"]):
-	    input_str=input_str+line
+    input_tmp_name=args["outdir"]+"/"+args["input"].split("/")[-1]+".tmp"
+    input_tmp=open(input_tmp_name,"w")
+    input_str=""
+    for line in open(args["input"]):
+        input_str=input_str+line
 
-	input_str_noascii=removeNonAscii(input_str)
-	input_tmp.write(input_str_noascii)
-	input_tmp.write("\n") #In case there is no newline. metamap require a newline at the end of file
-	input_tmp.close()
-	pt.run_metamap(input_tmp_name,args['prefix'],args['obo'],args['outdir'])
-	print("MetaMap HPO name extraction completed")
+    input_str_noascii=removeNonAscii(input_str)
+    input_tmp.write(input_str_noascii)
+    input_tmp.write("\n") #In case there is no newline. metamap require a newline at the end of file
+    input_tmp.close()
+    pt.run_metamap(input_tmp_name,args['prefix'],args['obo'],args['outdir'])
+    print("MetaMap HPO name extraction completed")
 
 ####run medlee
 if args["nlp"]=='medlee':
-	print("NLP used: MedLEE")
-	print("start to process MedLEE output")
-	pd.parse_medlee_output(args["input"],args['prefix'],args['outdir'])
-	print("MedLEE xml format output processed")
+    print("NLP used: MedLEE")
+    print("start to process MedLEE output")
+    pd.parse_medlee_output(args["input"],args['prefix'],args['outdir'])
+    print("MedLEE xml format output processed")
 
 ####run NCBO Annotator (API Key Required)
 if args["nlp"]=='NCBOannotator':
-	print("NLP used: NCBO Annotator")
-	print("start to run NCBO annotator")
-	pa.run_ncbo_annotator(notes_file=args["input"],prefix=args['prefix'],obo_file=args["obo"],outdir=args['outdir'])
-	print("completion of extration of HPO names by NCBO annotator")
+    print("NLP used: NCBO Annotator")
+    print("start to run NCBO annotator")
+    pa.run_ncbo_annotator(notes_file=args["input"],prefix=args['prefix'],obo_file=args["obo"],outdir=args['outdir'])
+    print("completion of extration of HPO names by NCBO annotator")
 
 
 #hpo_file=args['prefix']+".hpo.txt"
@@ -187,11 +187,11 @@ os.remove(hpo_file_tmp1)
 os.remove(hpo_file_tmp2)
 
 if not args["keeptmp"]:
-	print("Notes: temporary output files were removed. Keeping them by adding on -k")
-	for file in glob.glob(args["outdir"]+"/"+args["prefix"]+".tmp*"):
-	    if os.path.isfile(file):
-		os.remove(file)
+    print("Notes: temporary output files were removed. Keeping them by adding on -k")
+    for file in glob.glob(args["outdir"]+"/"+args["prefix"]+".tmp*"):
+        if os.path.isfile(file):
+            os.remove(file)
 
-	if args['nlp']=='metamap' and os.path.isfile(input_tmp_name):
-	    os.remove(input_tmp_name)
+    if args['nlp']=='metamap' and os.path.isfile(input_tmp_name):
+        os.remove(input_tmp_name)
 print("completed!")
