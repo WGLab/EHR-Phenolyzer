@@ -1,4 +1,5 @@
-import os,json,urllib2,sys
+import os,json,sys
+from urllib.request import build_opener, quote
 from hpo_obo import Obo
 
 
@@ -34,9 +35,9 @@ def run_ncbo_annotator(notes_file="example/Bourne_OPA3.txt",prefix="ncbo",obo_fi
     op=Obo(obo_file)
     id2name_dict=op.id2name()
     #get json from ncbo annotator web service
-    bopen=urllib2.build_opener()
+    bopen=build_opener()
     bopen.addheaders=[('Authorization','apikey token=' + api_key)]
-    url_info="http://data.bioontology.org"+"/annotator?longest_only=true&ontologies=HP&text=" + urllib2.quote(notes_text)
+    url_info="http://data.bioontology.org"+"/annotator?longest_only=true&ontologies=HP&text=" + quote(notes_text)
     ncbo_json=json.loads(bopen.open(url_info).read())
     unique_ids={}
     for records in ncbo_json:
