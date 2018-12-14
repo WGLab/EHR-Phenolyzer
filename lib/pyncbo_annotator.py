@@ -1,6 +1,6 @@
 import os,json,sys
 from urllib.request import build_opener, quote
-from hpo_obo import Obo
+from lib.hpo_obo import Obo
 
 
 

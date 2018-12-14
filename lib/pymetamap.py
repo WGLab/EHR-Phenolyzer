@@ -1,7 +1,7 @@
 import os
-from parse_metamap_output import OutputParser
+from lib.parse_metamap_output import OutputParser
 #import obo as ob # obo from third party, TODO: write my own obo file parser
-from hpo_obo import Obo
+from lib.hpo_obo import Obo
 
 def run_command(command_line):
     return os.popen(command_line).read()

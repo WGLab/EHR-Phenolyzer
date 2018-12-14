@@ -2,7 +2,7 @@ import argparse,os,subprocess
 import glob,sys,distutils.spawn
 import pymetamap as pt
 import sys
-from hpo_obo import Obo
+from lib.hpo_obo import Obo
 
 
 ###parse the arguments
