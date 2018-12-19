@@ -11,8 +11,8 @@ def run_command(command_line):
 
 # Remove abnormal characters in the input file, otherwise will lead to system error for metamap
 # TODO: consider more cases
-def format_input(notes_file, outdir):
-    def removeNonAscii(s):
+def format_input(filename, outdir):
+    def remove_non_ascii(s):
         return "".join(i for i in s if ord(i) < 128)
 
     input_tmp_name = outdir + "/" + filename.split("/")[-1] + ".tmp"
@@ -21,7 +21,7 @@ def format_input(notes_file, outdir):
     for line in open(filename):
         input_str = input_str + line
 
-    input_str_noascii = removeNonAscii(input_str)
+    input_str_noascii = remove_non_ascii(input_str)
     input_tmp.write(input_str_noascii)
     input_tmp.close()
     return 0
