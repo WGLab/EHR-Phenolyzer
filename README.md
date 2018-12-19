@@ -30,13 +30,13 @@ $ pipenv install
 
 ### Install python modules manually
 
-If you have trouble with **pipenv** or simply do not want to use it. You may also install the dependencies manually using:
+Alternatively, if you have trouble with **pipenv** or simply do not want to use it. You may also install the dependencies manually using:
 
 ```bash
 $ pip install <package_name> 
 ```
 
-The list of dependencies is specified in the *Packages* section inside [Pipfile](Pipfile).
+The list of dependencies is specified in the ***packages*** section inside [Pipfile](Pipfile).
   
 
 ### Install MetaMap (needed only if choosing MetaMap as NLP)
