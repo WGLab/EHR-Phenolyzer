@@ -11,12 +11,22 @@ EHR-Phenolyzer is a python pipeline to automatically translate raw clinical note
 5. linux environment
 
 ## INSTALLATION
+
 ### Install python modules
+
+This project manages a Python virtual environment with **pipenv**. If you don't have **pipenv** in your local environment, you may install it with:
+
 ```bash
-$pip install requests
-$pip install lxml
-$pip install urllib3
+$ pip install pipenv
 ```
+
+Then you can create an exact copy of this project's dependencies using:
+
+```bash
+$ pipenv install 
+```
+
+*hint: the virtual environment is build on Python 3.6, you will need to have Python 3.6 in your local environment. Otherwise, you may download it from [https://www.python.org/downloads/](https://www.python.org/downloads/)*  
 
 ### Install MetaMap (needed only if choosing MetaMap as NLP)
 
