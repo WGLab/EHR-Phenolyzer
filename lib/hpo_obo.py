@@ -1,5 +1,6 @@
 import re
 
+
 # HPO file from http://purl.obolibrary.org/obo/hp.obo
 class Obo:
     def __init__(self, obo_file):

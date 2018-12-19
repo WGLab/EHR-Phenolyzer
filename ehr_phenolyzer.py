@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-import argparse, os, subprocess
+import argparse, os
 import glob, sys, distutils.spawn
 from lib import pymetamap as pt
 from lib import pymedlee as pd
@@ -7,7 +7,7 @@ from lib import pyncbo_annotator as pa
 from lib import hpo_obo as hpo
 
 
-###parse the arguments
+# parse the arguments
 parser = argparse.ArgumentParser(
     description="Get ranked gene ids based on EHR medical notes",
     epilog="One step from EHR records to ranked gene list.Before running, please install Phenolyzer, and get the NLP tools ready.",
@@ -59,7 +59,7 @@ if len(sys.argv) == 1:
 args = parser.parse_args()
 args = vars(args)  # convert to dictionary,and accessed by: args['input']
 
-###check third-party tools availabilities
+# check third-party tools availabilities
 
 if args["nlp"] == "metamap":
     if not (distutils.spawn.find_executable("skrmedpostctl")):
@@ -72,24 +72,26 @@ if not (distutils.spawn.find_executable("disease_annotation.pl")):
     print("Error: disease_annotation.pl not found, please install Phenolyzer")
     sys.exit()
 
-###run command lines in python
+
+# run command lines in python
 def run_command(command_line):
     return os.popen(command_line).read()
 
 
-###create outdir
+# create outdir
 phenolyzer_outdir = "mkdir -p {0}".format(args["outdir"])
 print(run_command(phenolyzer_outdir))
 
 
-###run NLP
+# run NLP
 
-####run metamap
+# run metamap
 if args["nlp"] == "metamap":
     print("NLP used: MetaMap")
     print("start to run MetaMap")
-    ###handle no-ASCII characters in the medical notes, otherwise will lead to system error in metamap
-    def removeNonAscii(s):
+
+    # handle no-ASCII characters in the medical notes, otherwise will lead to system error in metamap
+    def remove_non_ascii(s):
         return "".join(i for i in s if ord(i) < 128)
 
     input_tmp_name = args["outdir"] + "/" + args["input"].split("/")[-1] + ".tmp"
@@ -98,7 +100,7 @@ if args["nlp"] == "metamap":
     for line in open(args["input"]):
         input_str = input_str + line
 
-    input_str_noascii = removeNonAscii(input_str)
+    input_str_noascii = remove_non_ascii(input_str)
     input_tmp.write(input_str_noascii)
     input_tmp.write(
         "\n"
@@ -107,14 +109,14 @@ if args["nlp"] == "metamap":
     pt.run_metamap(input_tmp_name, args["prefix"], args["obo"], args["outdir"])
     print("MetaMap HPO name extraction completed")
 
-####run medlee
+# run medlee
 if args["nlp"] == "medlee":
     print("NLP used: MedLEE")
     print("start to process MedLEE output")
     pd.parse_medlee_output(args["input"], args["prefix"], args["outdir"])
     print("MedLEE xml format output processed")
 
-####run NCBO Annotator (API Key Required)
+# run NCBO Annotator (API Key Required)
 if args["nlp"] == "NCBOannotator":
     print("NLP used: NCBO Annotator")
     print("start to run NCBO annotator")
@@ -129,7 +131,7 @@ if args["nlp"] == "NCBOannotator":
 
 # hpo_file=args['prefix']+".hpo.txt"
 
-###add HPO ID to the HPO term file: temporary fix for HPO ID problems###
+# add HPO ID to the HPO term file: temporary fix for HPO ID problems###
 hpo_obj = hpo.Obo(args["obo"])
 hpo_graph = hpo_obj.graph()
 name2id_dict = hpo_obj.name2id()
@@ -174,10 +176,10 @@ hpo_f2.close()
 # print("HPO term extraction:")
 # print(run_command(get_metamap_terms))
 # print(get_metamap_terms)
-##stop the server
+## stop the server
 # print(run_command("skrmedpostctl stop"))
 
-###run phenolyzer
+# run phenolyzer
 
 print("run phenolyzer:")
 phenolyzer_command = "disease_annotation.pl -f -p -ph -logistic -addon DB_DISGENET_GENE_DISEASE_SCORE,DB_GAD_GENE_DISEASE_SCORE -addon_weight 0.25 {0} -out {1}/{2}.tmp".format(
@@ -186,7 +188,7 @@ phenolyzer_command = "disease_annotation.pl -f -p -ph -logistic -addon DB_DISGEN
 print(phenolyzer_command)
 print(run_command(phenolyzer_command))
 
-###extract the ranked genes list
+# extract the ranked genes list
 with open(args["outdir"] + "/" + args["prefix"] + ".tmp.final_gene_list") as f:
     header = f.readline()
     seed_genes = []
@@ -199,7 +201,7 @@ with open(args["outdir"] + "/" + args["prefix"] + ".tmp.final_gene_list") as f:
             predicted_genes.append(gene)
     final_genes = seed_genes + predicted_genes
 
-###get OMIM gene list
+# get OMIM gene list
 mim_gene_dict = {}
 with open(args["omim"]) as f:
     for line in f:
@@ -214,7 +216,7 @@ for gene in final_genes:
         # if mim_gene_dict.has_key(gene):
         omim_genes.append(gene)
 
-###output the result
+# output the result
 outfile = open(args["outdir"] + "/" + args["prefix"] + ".EHRPhenolyzer.Genes.txt", "w")
 outfile.write("rank\tgene\n")
 i = 0
@@ -234,7 +236,7 @@ for gene in omim_genes:
 outfile.close()
 
 
-###clean the work space
+# clean the work space
 
 os.remove(hpo_file_tmp1)
 os.remove(hpo_file_tmp2)

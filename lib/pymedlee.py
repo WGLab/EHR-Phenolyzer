@@ -1,8 +1,5 @@
-import json
-import re
-import requests
-import os
 from lxml import etree
+
 
 # MedLEE is not an open source software, you need to first run it by yourself, and get the xml format output
 # This function will extract the HPO names from MedLEE xml format output

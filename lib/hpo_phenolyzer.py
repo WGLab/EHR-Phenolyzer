@@ -1,10 +1,10 @@
-import argparse, os, subprocess
-import glob, sys, distutils.spawn
+import argparse, os
+import glob, distutils.spawn
 import sys
 from lib.hpo_obo import Obo
 
 
-###parse the arguments
+# parse the arguments
 parser = argparse.ArgumentParser(
     description="Get ranked gene ids based on HPO id or name",
     epilog="Before running, please install Phenolyzer first",
@@ -53,17 +53,18 @@ if len(sys.argv) == 1:
 args = parser.parse_args()
 args = vars(args)  # convert to dictionary,and accessed by: args['input']
 
-###check third-party tools availabilities
+# check third-party tools availabilities
 if not (distutils.spawn.find_executable("disease_annotation.pl")):
     print("Error: disease_annotation.pl not found, please install Phenolyzer")
     sys.exit()
 
-###run command lines in python
+
+# run command lines in python
 def run_command(command_line):
     return os.popen(command_line).read()
 
 
-###create outdir
+# create outdir
 phenolyzer_outdir = "mkdir -p {0}".format(args["outdir"])
 print(run_command(phenolyzer_outdir))
 
@@ -91,7 +92,7 @@ else:
     sys.exit()
 
 
-###run phenolyzer
+# run phenolyzer
 
 print("run phenolyzer:")
 phenolyzer_command = "disease_annotation.pl -f -p -ph -logistic -addon DB_DISGENET_GENE_DISEASE_SCORE,DB_GAD_GENE_DISEASE_SCORE -addon_weight 0.25 {0} -out {1}/{2}.tmp".format(
@@ -100,7 +101,7 @@ phenolyzer_command = "disease_annotation.pl -f -p -ph -logistic -addon DB_DISGEN
 print(phenolyzer_command)
 print(run_command(phenolyzer_command))
 
-###extract the ranked genes list
+# extract the ranked genes list
 with open(args["outdir"] + "/" + args["prefix"] + ".tmp.final_gene_list") as f:
     header = f.readline()
     seed_genes = []
@@ -113,7 +114,7 @@ with open(args["outdir"] + "/" + args["prefix"] + ".tmp.final_gene_list") as f:
             predicted_genes.append(gene)
     final_genes = seed_genes + predicted_genes
 
-###get OMIM gene list
+# get OMIM gene list
 mim_gene_dict = {}
 with open(args["omim"]) as f:
     for line in f:
@@ -128,7 +129,7 @@ for gene in final_genes:
         # if mim_gene_dict.has_key(gene):
         omim_genes.append(gene)
 
-###output the result
+# output the result
 outfile = open(args["outdir"] + "/" + args["prefix"] + ".EHRPhenolyzer.Genes.txt", "w")
 outfile.write("rank\tgene\n")
 i = 0
@@ -147,7 +148,7 @@ for gene in omim_genes:
     outfile.write(str(i) + "\t" + gene + "\n")
 outfile.close()
 
-###clean the work space
+# clean the work space
 for file in glob.glob(args["outdir"] + "/" + args["prefix"] + ".tmp*"):
     if os.path.isfile(file):
         os.remove(file)
