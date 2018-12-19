@@ -9,7 +9,7 @@ def run_command(command_line):
 
 #Remove abnormal characters in the input file, otherwise will lead to system error for metamap
 #TODO: consider more cases
-def format_input(notes_file,outdir):
+def format_input(filename,outdir):
     def removeNonAscii(s):
         return "".join(i for i in s if ord(i)<128)
 
