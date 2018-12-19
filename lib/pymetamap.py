@@ -1,7 +1,7 @@
 import os
-from parse_metamap_output import OutputParser
+from lib.parse_metamap_output import OutputParser
 #import obo as ob # obo from third party, TODO: write my own obo file parser
-from hpo_obo import Obo
+from lib.hpo_obo import Obo
 
 def run_command(command_line):
     return os.popen(command_line).read()
@@ -9,7 +9,7 @@ def run_command(command_line):
 
 #Remove abnormal characters in the input file, otherwise will lead to system error for metamap
 #TODO: consider more cases
-def format_input(notes_file,outdir):
+def format_input(filename,outdir):
     def removeNonAscii(s):
         return "".join(i for i in s if ord(i)<128)
 

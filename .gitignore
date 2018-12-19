@@ -1,0 +1,5 @@
+# ignore IDE config files
+.idea/
+
+# ignore python cache files
+**/__pycache__/**
