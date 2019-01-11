@@ -132,7 +132,7 @@ class Obo:
         path = path + [start]
         if start == end:
             return path
-        if not graph.has_key(start):
+        if graph.get(start)==None:
             return None
         for node in graph[start]:
             if node not in path:
