@@ -1,5 +1,6 @@
 import os, json, sys
 from urllib.request import build_opener, quote
+import urllib 
 from lib.hpo_obo import Obo
 
 
@@ -45,12 +46,15 @@ def run_ncbo_annotator(
     # get json from ncbo annotator web service
     bopen = build_opener()
     bopen.addheaders = [("Authorization", "apikey token=" + api_key)]
-    url_info = (
+    '''url_info = (
         "http://data.bioontology.org"
         + "/annotator?longest_only=true&ontologies=HP&text="
         + quote(notes_text)
-    )
-    ncbo_json = json.loads(bopen.open(url_info).read())
+    )'''
+    url_info = "http://data.bioontology.org/annotator"
+    data = urllib.parse.urlencode({'longest_only':'true','text' : notes_text,'ontologies':'HP'}).encode()
+    
+    ncbo_json = json.loads(bopen.open(url_info,data).read()) # bopen.open(URL,data) will send the data to NCBO server by HTTP POST method by default
     unique_ids = {}
     for records in ncbo_json:
         hp_id = records["annotatedClass"]["@id"].split("/")[-1]
@@ -62,7 +66,10 @@ def run_ncbo_annotator(
 
     outfile = open(outdir + "/" + prefix + ".hpo.txt", "w")
     for hpo_id in unique_ids.keys():
-        name = id2name_dict[hpo_id]
-        outfile.write(name + "\n")
+        try:
+            name = id2name_dict[hpo_id]
+            outfile.write(name + "\n")
+        except KeyError:
+            pass
     outfile.close()
     return True
